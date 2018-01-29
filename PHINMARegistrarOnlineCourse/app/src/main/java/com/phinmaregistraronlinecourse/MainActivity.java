@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
 
+
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -72,13 +74,16 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_courses) {
+        if (id == R.id.nav_profile) {
             // Handle the camera action
-        } else if (id == R.id.nav_setting) {
+        } else if (id == R.id.nav_awards) {
+
+        } else if (id == R.id.nav_achievements) {
 
         } else if (id == R.id.nav_logout) {
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
