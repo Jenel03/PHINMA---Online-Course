@@ -66,13 +66,13 @@ public class Modules extends Fragment{
 
     private void prepareAlbums() {
         int[] covers = new int[]{
-                R.drawable.album1,
-                R.drawable.album2,
-                R.drawable.album3,
-                R.drawable.album4,
-                R.drawable.album5,
-                R.drawable.album6,
-                R.drawable.album7};
+                R.drawable.sample,
+                R.drawable.sample,
+                R.drawable.sample,
+                R.drawable.sample,
+                R.drawable.sample,
+                R.drawable.sample,
+                R.drawable.sample};
 
         Module a = new Module("General Admission Policy", 13, covers[0]);
         moduleList.add(a);

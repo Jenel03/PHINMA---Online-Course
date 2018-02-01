@@ -17,11 +17,6 @@
     <string name="nav_scores">Scores</string>
 
 
-    <string name="action_add_favourite">Add to Favourites</string>
-    <string name="action_play_next">Play Next</string>
-    <string name="backdrop_title">LOVE MUSIC</string>
-    <string name="backdrop_subtitle">This season top 20 albums</string>
-
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="nav_item_activity_titles">
         <item>Modules</item>

@@ -45,7 +45,14 @@
                 android:paddingLeft="@dimen/album_title_padding"
                 android:paddingRight="@dimen/album_title_padding"
                 android:textSize="@dimen/songs_count" />
-
+            <ImageView
+                android:id="@+id/overflow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/subtitle"
+                android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
+                android:scaleType="centerCrop"/>
 
 
         </RelativeLayout>

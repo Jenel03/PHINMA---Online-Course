@@ -13,8 +13,7 @@
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.SplashScreen"
             android:theme="@style/fullScreen">
@@ -24,6 +23,54 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.Module_Details" />
+        <activity android:name=".ModuleOneActivity" />
+        <activity android:name=".ModuleTwoActivity" />
+        <activity android:name=".ModuleThreeActivity" />
+        <activity android:name=".ModuleFourActivity" />
+        <activity android:name=".ModuleFiveActivity" />
+        <activity android:name=".ModuleSixActivity" />
+        <activity android:name=".ModuleSevenActivity" />
+        <activity android:name=".ModuleEightActivity" />
+        <activity android:name=".moduleOne.ModuleOneSub1" />
+        <activity android:name=".moduleOne.ModuleOneSub2" />
+        <activity android:name=".moduleOne.ModuleOneSub3" />
+        <activity android:name=".moduleOne.ModuleOneSub4" />
+        <activity android:name=".moduleOne.ModuleOneSub5" />
+        <activity android:name=".moduleTwo.ModuleTwoSub1" />
+        <activity android:name=".moduleTwo.ModuleTwoSub2" />
+        <activity android:name=".moduleTwo.ModuleTwoSub3" />
+        <activity android:name=".moduleTwo.ModuleTwoSub4" />
+        <activity android:name=".moduleTwo.ModuleTwoSub5" />
+        <activity android:name=".moduleTwo.ModuleTwoSub6" />
+        <activity android:name=".moduleTwo.ModuleTwoSub7" />
+        <activity android:name=".moduleTwo.ModuleTwoSub8" />
+        <activity android:name=".moduleThree.ModuleThreeSub1" />
+        <activity android:name=".moduleThree.ModuleThreeSub2" />
+        <activity android:name=".moduleThree.ModuleThreeSub3" />
+        <activity android:name=".moduleThree.ModuleThreeSub4" />
+        <activity android:name=".moduleFour.ModuleFourSub1" />
+        <activity android:name=".moduleFour.ModuleFourSub2" />
+        <activity android:name=".moduleFour.ModuleFourSub3" />
+        <activity android:name=".moduleFour.ModuleFourSub4" />
+        <activity android:name=".moduleFour.ModuleFourSub5" />
+        <activity android:name=".moduleFour.ModuleFourSub6" />
+        <activity android:name=".moduleFive.ModuleFiveSub1" />
+        <activity android:name=".moduleFive.ModuleFiveSub2" />
+        <activity android:name=".moduleFive.ModuleFiveSub3" />
+        <activity android:name=".moduleSix.ModuleSixSub1" />
+        <activity android:name=".moduleSix.ModuleSixSub2" />
+        <activity android:name=".moduleSix.ModuleSixSub3" />
+        <activity android:name=".moduleSix.ModuleSixSub4" />
+        <activity android:name=".moduleSeven.ModuleSevenSub1" />
+        <activity android:name=".moduleSeven.ModuleSevenSub2" />
+        <activity android:name=".moduleSeven.ModuleSevenSub3" />
+        <activity android:name=".moduleSeven.ModuleSevenSub4" />
+        <activity android:name=".moduleSeven.ModuleSevenSub5" />
+        <activity android:name=".moduleSeven.ModuleSevenSub6" />
+        <activity android:name=".moduleSeven.ModuleSevenSub7" />
+        <activity android:name=".moduleSeven.ModuleSevenSub8" />
+        <activity android:name=".moduleSeven.ModuleSevenSub9"></activity>
     </application>
 
 </manifest>

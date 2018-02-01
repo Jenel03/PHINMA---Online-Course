@@ -1,6 +1,7 @@
 package com.phinmaregistraronlinecourse.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.phinmaregistraronlinecourse.R;
+import com.phinmaregistraronlinecourse.activity.Module_Details;
 
 import java.util.List;
 
@@ -28,13 +30,14 @@ public class ModuleAdapter extends RecyclerView.Adapter<ModuleAdapter.MyViewHold
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title, subtitle;
-        public ImageView thumbnail;
+        public ImageView thumbnail,overflow;
 
         public MyViewHolder(View view) {
             super(view);
             title = (TextView) view.findViewById(R.id.title);
             subtitle = (TextView) view.findViewById(R.id.subtitle);
             thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
+            overflow = (ImageView) view.findViewById(R.id.overflow);
         }
     }
 
@@ -61,6 +64,12 @@ public class ModuleAdapter extends RecyclerView.Adapter<ModuleAdapter.MyViewHold
         // loading album cover using Glide library
         Glide.with(mContext).load(album.getThumbnail()).into(holder.thumbnail);
 
+        holder.overflow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mContext.startActivity(new Intent(mContext,Module_Details.class));
+            }
+        });
 
     }
 
