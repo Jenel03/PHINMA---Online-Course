@@ -14,7 +14,13 @@
     <string name="nav_profile">Profile</string>
     <string name="nav_awards">Awards</string>
     <string name="nav_achievements">Achievements</string>
+    <string name="nav_scores">Scores</string>
 
+
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
 
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="nav_item_activity_titles">
@@ -22,5 +28,6 @@
         <item>Profile</item>
         <item>Awards</item>
         <item>Achievements</item>
+        <item>Scores</item>
     </string-array>
 </resources>

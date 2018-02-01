@@ -22,6 +22,7 @@ import com.phinmaregistraronlinecourse.fragment.Achievement;
 import com.phinmaregistraronlinecourse.fragment.Awards;
 import com.phinmaregistraronlinecourse.fragment.Modules;
 import com.phinmaregistraronlinecourse.fragment.Profile;
+import com.phinmaregistraronlinecourse.fragment.Scores;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -38,7 +39,8 @@ public class MainActivity extends AppCompatActivity{
     private static final String TAG_PROFILE = "profile";
     private static final String TAG_AWARDS = "awards";
     private static final String TAG_ACHIEVEMENT = "achievements";
-    public static String CURRENT_TAG = TAG_PROFILE;
+    private static final String TAG_SCORES = "scores";
+    public static String CURRENT_TAG = TAG_MODULE;
 
     // toolbar titles respected to selected nav menu item
     private String[] activityTitles;
@@ -147,6 +149,10 @@ public class MainActivity extends AppCompatActivity{
                 // movies fragment
                 Achievement achievementFragment = new Achievement();
                 return achievementFragment;
+            case 4:
+                // movies fragment
+                Scores scoresFragment = new Scores();
+                return scoresFragment;
 
             default:
                 return new Modules();
@@ -187,6 +193,10 @@ public class MainActivity extends AppCompatActivity{
                     case R.id.nav_achievements:
                         navItemIndex = 3;
                         CURRENT_TAG = TAG_ACHIEVEMENT;
+                        break;
+                    case R.id.nav_scores:
+                        navItemIndex = 4;
+                        CURRENT_TAG = TAG_SCORES;
                         break;
                     case R.id.nav_logout:
                         startActivity(new Intent(MainActivity.this, SplashScreen.class));
