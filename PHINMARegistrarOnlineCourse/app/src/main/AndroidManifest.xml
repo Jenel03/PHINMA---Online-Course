@@ -23,15 +23,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.Module_Details" />
-        <activity android:name=".ModuleOneActivity" />
-        <activity android:name=".ModuleTwoActivity" />
-        <activity android:name=".ModuleThreeActivity" />
-        <activity android:name=".ModuleFourActivity" />
-        <activity android:name=".ModuleFiveActivity" />
-        <activity android:name=".ModuleSixActivity" />
-        <activity android:name=".ModuleSevenActivity" />
-        <activity android:name=".ModuleEightActivity" />
+        <activity
+            android:name=".ModuleOneActivity"
+            android:theme="@style/DetailsTheme" />
+        <activity
+            android:name=".ModuleTwoActivity"
+            android:theme="@style/DetailsTheme" />
+        <activity
+            android:name=".ModuleThreeActivity"
+            android:theme="@style/DetailsTheme" />
+        <activity
+            android:name=".ModuleFourActivity"
+            android:theme="@style/DetailsTheme" />
+        <activity
+            android:name=".ModuleFiveActivity"
+            android:theme="@style/DetailsTheme" />
+        <activity
+            android:name=".ModuleSixActivity"
+            android:theme="@style/DetailsTheme" />
+        <activity
+            android:name=".ModuleSevenActivity"
+            android:theme="@style/DetailsTheme" />
         <activity android:name=".moduleOne.ModuleOneSub1" />
         <activity android:name=".moduleOne.ModuleOneSub2" />
         <activity android:name=".moduleOne.ModuleOneSub3" />
@@ -70,7 +82,9 @@
         <activity android:name=".moduleSeven.ModuleSevenSub6" />
         <activity android:name=".moduleSeven.ModuleSevenSub7" />
         <activity android:name=".moduleSeven.ModuleSevenSub8" />
-        <activity android:name=".moduleSeven.ModuleSevenSub9"></activity>
+        <activity android:name=".moduleSeven.ModuleSevenSub9" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".moduleOne.ModuleOneSub6"></activity>
     </application>
 
 </manifest>

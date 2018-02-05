@@ -8,9 +8,6 @@
     <string name="closeDrawer">close_drawer</string>
 
     <string name="action_settings">Settings</string>
-<<<<<<< HEAD
-    <string name="settings">Settings</string>
-=======
 
     <!-- Navigation Drawer menu labels -->
     <string name="nav_module">Modules</string>
@@ -28,5 +25,7 @@
         <item>Achievements</item>
         <item>Scores</item>
     </string-array>
->>>>>>> SplashScreen
+
+    <string name="settings">Settings</string>
+
 </resources>

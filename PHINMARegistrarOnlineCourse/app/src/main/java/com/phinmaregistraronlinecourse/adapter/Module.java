@@ -5,6 +5,7 @@ package com.phinmaregistraronlinecourse.adapter;
  */
 
 public class Module {
+    int id;
     private String name;
     private int numOfLectures;
     private int thumbnail;
@@ -12,10 +13,18 @@ public class Module {
     public Module() {
     }
 
-    public Module(String name, int numOfLectures, int thumbnail) {
+    public Module(int id, String name, int numOfLectures, int thumbnail) {
+        this.id = id;
         this.name = name;
         this.numOfLectures = numOfLectures;
         this.thumbnail = thumbnail;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
