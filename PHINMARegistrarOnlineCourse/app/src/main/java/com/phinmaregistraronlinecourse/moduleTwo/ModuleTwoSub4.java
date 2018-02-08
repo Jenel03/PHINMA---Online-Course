@@ -24,17 +24,13 @@ public class ModuleTwoSub4 extends AppCompatActivity {
 
         String htmlAsString = getString(R.string.ModuleTwoSub4);
         String htmlAsString2 = getString(R.string.ModuleTwoSub4_1);
-        String htmlAsString3 = getString(R.string.ModuleTwoSub4_2);
-
 
         WebView webView = (WebView) findViewById(R.id.webView);
         WebView webView2 = (WebView) findViewById(R.id.webView2);
-        WebView webView3 = (WebView) findViewById(R.id.webView3);
 
 
         loadData(webView,htmlAsString);
         loadData(webView2,htmlAsString2);
-        loadData(webView3,htmlAsString3);
 
 
     }

@@ -28,13 +28,12 @@ public class ModuleOneSub2 extends AppCompatActivity {
         setTitle(title);
 
         String htmlAsString = getString(R.string.ModuleOneSub2);
-        String htmlAsString2 = getString(R.string.ModuleOneSub2_1);
+
 
         WebView webView = (WebView) findViewById(R.id.webView);
-        WebView webView2 = (WebView) findViewById(R.id.webView2);
 
         loadData(webView,htmlAsString);
-        loadData(webView2,htmlAsString2);
+
 
     }
 

@@ -40,8 +40,8 @@
 
     <string name="ModuleOneSub1">
         <![CDATA[
-        <h4>Applicants for admission must submit upon enrollment, attached to the registration form, the following
-credentials:</h4>
+        <p>Applicants for admission must submit upon enrollment, attached to the registration form, the following
+        credentials:</p>
         ]]>
     </string>
     <string name="ModuleOneSub1_1">
@@ -141,16 +141,12 @@ credentials:</h4>
 
     <string name="ModuleOneSub2">
         <![CDATA[
-        <h4>Returning students will be admitted in the curriculum in effect at the time of his admission. Students
+        <p>Returning students will be admitted in the curriculum in effect at the time of his admission. Students
             seeking readmission should obtain a summary of grades from the Office of the registrar for evaluation by
-            the Dean.</h4>
+            the Dean.</p>
 
-        ]]>
-    </string>
-    <string name="ModuleOneSub2_1">
-        <![CDATA[
-        <h4>However, for a returning student who wants to finish his/her course but was originally enrolled in an
-            already phased-out version of the curriculum, the following guidelines shall apply</h4>
+        <p>However, for a returning student who wants to finish his/her course but was originally enrolled in an
+            already phased-out version of the curriculum, the following guidelines shall apply</p>
         <ol type="1">
             <li>The student must follow the latest curriculum.</li>
             <li>The Dean in charge of his course identifies the subjects from the old curriculum that may be
@@ -163,56 +159,44 @@ credentials:</h4>
 
     <string name="ModuleOneSub3">
         <![CDATA[
-        <h4>Our schools will only accept the following transferees:</h4>
+        <p>Our schools will only accept the following transferees:</p>
         <ul>
             <li>for board courses
                 <ul>
-                    <li>transferees who need at least 3 terms to finish their degrees, and</li>
+                    <li>transferees who need at least 3 terms to finish their degrees, and</li></br>
                     <li>transferees who meet the applicable year level retention standards of the course in which
                     they plan to enroll</li>
                 </ul>
             </li>
             <li>for nonboard courses
                 <ul>
-                    <li>transferees who need at least 2 terms to finish their degrees, and</li>
+                    <li>transferees who need at least 2 terms to finish their degrees, and</li></br>
                     <li>transferees who meet the applicable year level retention standards of the course in which
                     they plan to enroll</li>
                 </ul>
             </li>
         </ul>
-        ]]>
-    </string>
 
-    <string name="ModuleOneSub3_1">
-        <![CDATA[
-        <h4>The number of terms will be determined by the deans during the validation of the subjects taken by the
-            transferee in his current school. Summer terms are not included. </h4>
+        <p>The number of terms will be determined by the deans during the validation of the subjects taken by the
+            transferee in his current school. Summer terms are not included. </p>
 
-        ]]>
-    </string>
 
-    <string name="ModuleOneSub3_2">
-        <![CDATA[
-        <h4>To meet the General Education requirements of PEN</h4>
+        <p>To meet the General Education requirements of PEN</p>
         <ol type="1">
             <li>Transferees who have had 6 units of English in their previous school will be required to take
-                English 3 and English 4.</li>
+                English 3 and English 4.</li></br>
             <li>Transferees taking up Bachelor in Elementary Education, Bachelor in Secondary Education, or
                 any AB degree, who have had 9 units of English in their previous school will be required to take
                 an English 3 validation exam. If they pass the exam, they will be required to take English 4 only.
-                If they do not pass, they will be required to take English 3 and English 4.</li>
+                If they do not pass, they will be required to take English 3 and English 4.</li></br>
             <li>Transferees who have had 3 units of IT will be required to take an IT 1 validation exam. If they
                 pass the exam, they will be required to take IT 2 only. If they do not pass the exam, they will be
                 required to take IT 1 and IT 2. </li>
         </ol>
-        ]]>
-    </string>
 
-    <string name="ModuleOneSub3_3">
-        <![CDATA[
-        <h4>A transferee may decide when he will take the validation exam. He may also decide when he will enroll
+        <p>A transferee may decide when he will take the validation exam. He may also decide when he will enroll
          in any of the subjects mentioned above.
-        </h4>
+        </p>
 
         ]]>
     </string>
@@ -220,7 +204,7 @@ credentials:</h4>
 
     <string name="ModuleOneSub4">
         <![CDATA[
-        <h4>The following steps will be followed for enrollment of new students:</h4>
+        <p>The following steps will be followed for enrollment of new students:</p>
         <ol type="1">
             <p><b>Registration Officer</b></p>
             <li>Give the enrollee a blank copy of the Student Permanent Record (SPR)
@@ -251,7 +235,7 @@ credentials:</h4>
 
     <string name="ModuleOneSub5">
         <![CDATA[
-        <h4>The following steps will be followed for enrollment of old students:</h4>
+        <p>The following steps will be followed for enrollment of old students:</p>
         <ol type="1">
             <p><b>Dean</b></p>
             <li>Determine what subjects the student will enroll, but no schedule is given.
@@ -285,7 +269,7 @@ credentials:</h4>
 
     <string name="ModuleOneSub6">
         <![CDATA[
-        <h4>The following steps will be followed for enrollment of old students:</h4>
+        <p>The following steps will be followed for enrollment of transferees:</p>
         <ol type="1">
             <p><b>Dean</b></p>
             <li>Determine what subjects the student will enroll, but no schedule is given.
@@ -320,22 +304,22 @@ credentials:</h4>
 
     <string name="ModuleTwoSub1">
         <![CDATA[
-        <h4>Generally, the subject load may not exceed the load as written in the approved curriculum. However, a
+        <p>Generally, the subject load may not exceed the load as written in the approved curriculum. However, a
             graduating student may be allowed additional subject-loads of not more than six (6) academic units in
-            excess of the normal load prescribed in the curriculum for the last school term. </h4>
+            excess of the normal load prescribed in the curriculum for the last school term. </p>
         ]]>
     </string>
 
     <string name="ModuleTwoSub2">
         <![CDATA[
-        <h4>The year level of a student will be based on the lowest year level of the major subjects he or she is
-            currently enrolled in</h4>
+        <p>The year level of a student will be based on the lowest year level of the major subjects he or she is
+            currently enrolled in</p>
         ]]>
     </string>
 
     <string name="ModuleTwoSub3">
         <![CDATA[
-        <h4>If the student wishes to shift courses before he has enrolled</h4>
+        <p>If the student wishes to shift courses before he has enrolled</p>
         <ol type="1">
             <p><b>Student</b></p>
             <li>Fill out a Shifting Form from the Registrar’s Office. </li></br>
@@ -354,7 +338,7 @@ credentials:</h4>
     </string>
     <string name="ModuleTwoSub3_1">
         <![CDATA[
-        <h4>If the student wishes to shift courses after he has enrolled</h4>
+        <p>If the student wishes to shift courses after he has enrolled</p>
         <ol type="1">
             <p><b>Student</b></p>
             <li>Fill out a Shifting Form and an Adding/Dropping Form from the
@@ -415,8 +399,8 @@ credentials:</h4>
 
     <string name="ModuleTwoSub4">
         <![CDATA[
-        <h4>Cross-enrollment by PEN students is discouraged and shall be subject to PEN policies, rules, and
-        regulations. Particularly:</h4>
+        <p>Cross-enrollment by PEN students is discouraged and shall be subject to PEN policies, rules, and
+        regulations. Particularly:</p>
         <ol type="1">
             <li>A PEN student may not cross-enroll a board subject</li>
             <li>At the discretion of the PEN School, a PEN student's request for cross-enrollment of a nonboard
@@ -427,7 +411,7 @@ credentials:</h4>
     </string>
     <string name="ModuleTwoSub4_1">
         <![CDATA[
-        <h4>Procedure for securing a permit to cross-enroll</h4>
+        <p>Procedure for securing a permit to cross-enroll</p>
         <ol type="1">
             <p><b>Student</b></p>
             <li>Write a letter stating the request and justification for cross-enrollment</li></br>
@@ -441,10 +425,7 @@ credentials:</h4>
             <li>Approve the request. </li></br>
 
         </ol>
-        ]]>
-    </string>
-    <string name="ModuleTwoSub4_2">
-        <![CDATA[
+
         <p>If a student of another school wishes to cross-enroll in a PEN School, he must present a cross-enrollment
         permit from his school's Registrar. The permit should state the total number of units and the subjects that
         will be taken. </p>
@@ -482,9 +463,9 @@ credentials:</h4>
     </string>
     <string name="ModuleTwoSub5_2">
         <![CDATA[
-        <h4>The following procedure applies to adding/dropping/changing of subjects. Adding/dropping/changing of
+        <p>The following procedure applies to adding/dropping/changing of subjects. Adding/dropping/changing of
             subjects can be done only from the start of classes until the last day of enrollment.
-        </h4>
+        </p>
         <ol type="1">
             <p><b>Student</b></p>
             <li>Fill out an Adding/Dropping Form from the Registrar’s Office. </li></br>
@@ -507,9 +488,9 @@ credentials:</h4>
     </string>
     <string name="ModuleTwoSub5_3">
         <![CDATA[
-        <h4>The following procedure applies when a student drops all subjects during the semester, given that the
+        <p>The following procedure applies when a student drops all subjects during the semester, given that the
             student will not transfer schools and has plans of coming back.
-        </h4>
+        </p>
         <ol type="1">
             <p><b>Student</b></p>
             <li>Fill out a Total Dropping Form from the Registrar’s Office. </li></br>
@@ -533,7 +514,7 @@ credentials:</h4>
     </string>
     <string name="ModuleTwoSub5_4">
         <![CDATA[
-        <h4>A student who drops out and does not go through this process will have the following consequences: </h4>
+        <p>A student who drops out and does not go through this process will have the following consequences: </p>
         <ol type="1">
             <li>Subjects enrolled in the current semester will be given a grade of FA, which is equivalent to a 5 in
                 the computation of the GPA.
@@ -544,9 +525,9 @@ credentials:</h4>
     </string>
     <string name="ModuleTwoSub5_5">
         <![CDATA[
-        <h4>The following procedure applies when a student withdraws from the school, that is, the student leaves the
+        <p>The following procedure applies when a student withdraws from the school, that is, the student leaves the
             school and requests for transfer credentials.
-        </h4>
+        </p>
         <ol type="1">
             <p><b>Student</b></p>
             <li>Fill out a Withdrawal Form from the Registrar’s Office. </li></br>
@@ -572,9 +553,9 @@ credentials:</h4>
 
     <string name="ModuleTwoSub6">
         <![CDATA[
-        <h4>If students request that a class be opened for a subject that is typically not offered in the semester (i.e., an
+        <p>If students request that a class be opened for a subject that is typically not offered in the semester (i.e., an
             off-term class), the following guidelines to process the request will apply
-        </h4>
+        </p>
         <ol type="1">
            <li>Offering of off-term classes is subject to the approval of the COO.
            </li>
@@ -603,7 +584,7 @@ credentials:</h4>
     </string>
     <string name="ModuleTwoSub6_1">
         <![CDATA[
-        <h4>Procedure for requesting off-term classes:</h4>
+        <p>Procedure for requesting off-term classes:</p>
         <ol type="1">
             <p><b>Students</b></p>
             <li>Request for an off-term class from the Dean. </li></br>
@@ -653,5 +634,531 @@ credentials:</h4>
     </string>
 
 
+    <string name="ModuleThreeSub1">
+        <![CDATA[
+        <p>A school year is divided into three (3) terms:</p>
+        <ol type="1">
+            <li>First term : Summer</li>
+            <li>Second term : First Semester</li>
+            <li>Third term : Second Semester</li>
+        </ol>
+
+        <p>A semester will be divided into three (3) equal periods5: 1st Period, 2nd Period, and 3rd Period.</p>
+        <p>A summer term is divided into two (2) equal periods6: 1st Period and 2nd Period.</p>
+        ]]>
+    </string>
+
+    <string name="ModuleThreeSub2">
+        <![CDATA[
+        <p>The following process will be followed in determining the class schedules and room assignments for the
+        semester.</p>
+        <ol type="1">
+            <p><b>Dean</b></p>
+            <li>Submits a schedule (without room assignments) to the school
+                management system.</li></br>
+            <p><b>Registrar</b></p>
+            <li>Confirms the submitted schedule.</li></br>
+            <p><b>COO</b></p>
+            <li>Approves the schedule vis-à-vis curriculum and budget.</li></br>
+            <p><b>GSD</b></p>
+            <li>Submit an updated list of usable rooms to the Registrar.</li></br>
+            <p><b>Registrar</b></p>
+            <li>Assign rooms.</li></br>
+        </ol>
+
+        ]]>
+    </string>
+
+    <string name="ModuleThreeSub3">
+        <![CDATA[
+        <p>During enrollment, a class will close if the number of students has reached 90% of its maximum class
+        size. The remaining 10% of total slots will be filled up with students who are enrolling or adding subjects
+        after the enrollment period.</p>
+
+        <p>For example, a class with class size of 50 students will close during enlistment when the enrolled students
+        reach 45. The remaining 5 slots may be filled out after the enrollment period by late enrollees or students
+        who are adding subjects.</p>
+        ]]>
+    </string>
+
+    <string name="ModuleThreeSub4">
+        <![CDATA[
+        <p>In cases where a new subject is being offered by a college, a PEN Code must be assigned to this subject.
+        The following is the process for requesting new PEN subject codes:</p>
+        <ol type="1">
+            <p><b>Dean</b></p>
+            <li>Request for the new subject from the Registrar. Provide the following
+            information: Subject Title, Units (Lecture, Laboratory, RLE, Total), Hours
+            (Lecture, Laboratory, RLE, Total), Prerequisites.</li></br>
+            <p><b>Registrar</b></p>
+            <li>Review the current list of codes.</li></br>
+            <p><b>Registrar</b></p>
+            <li>If the subject does not exist, request for the new subject from PEN
+            Academics</li></br>
+            <p><b>PEN Academics</b></p>
+            <li>Approve the request. Update the current list, and upload the new subject in
+            the school management system</li>
+        </ol>
+
+        ]]>
+    </string>
+
+
+
+    <string name="ModuleFourSub1">
+        <![CDATA[
+        <p>A school year is divided into three (3) terms:</p>
+        <ol type="1">
+            <li>First term : Summer</li>
+            <li>Second term : First Semester</li>
+            <li>Third term : Second Semester</li>
+        </ol>
+
+        <p>A semester will be divided into three (3) equal periods5: 1st Period, 2nd Period, and 3rd Period.</p>
+        <p>A summer term is divided into two (2) equal periods6: 1st Period and 2nd Period.</p>
+        ]]>
+    </string>
+    <string name="ModuleFourSub2">
+        <![CDATA[
+        <p>Teachers release periodical grades to their students within 5 days after the previous period.
+        The Registrar releases the final grades 2 weeks after the final examinations. A copy of the students' grades
+        is mailed to the parents.</p>
+        ]]>
+    </string>
+    <string name="ModuleFourSub3">
+        <![CDATA[
+        <p>Part of passing a board subject or a board preparation subject is passing its final examination. Thus, a
+        student who gets a passing final grade based on the final grade formula despite getting a failing grade in
+        the final examination will get a grade of Incomplete (INC) in the subject. As early as the next semester,
+        the student may change his INC grade to a passing grade by retaking and passing the final examination.
+        The passing grade that the student gets in his retake of the final examination will be used to compute his
+        final grade in the subject. His previous failing grade in the said final examination will be disregarded.</p>
+
+        <p>If in one academic year the student fails to change his grade from an INC to a passing grade, he will be
+        given a grade of No Credit (NC).</p>
+        ]]>
+    </string>
+    <string name="ModuleFourSub4">
+        <![CDATA[
+        <h4>The PEN Schools follow a 10-point GPA system:</h4>
+        <table style="width:100%">
+          <tr>
+            <th>Grade</th>
+            <th>Remarks</th>
+          </tr>
+          <tr>
+            <td>1.00</td>
+            <td>Highest possible grade</td>
+          </tr>
+          <tr>
+            <td>1.25</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1.50</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1.75</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2.00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2.25</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2.50</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2.75</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3.00</td>
+            <td>Lowest passing grade</td>
+          </tr>
+          <tr>
+            <td>5.00</td>
+            <td>Failing grade</td>
+          </tr>
+
+        </table>
+        <p>The GPA is computed by obtaining the weighted average of the grades of each subject, up to two decimal
+        places rounded up. Here are some examples:</p>
+        ]]>
+    </string>
+    <string name="ModuleFourSub4_1">
+        <![CDATA[
+        <h4>Example 1:</h4>
+        <table style="width:100%">
+          <tr>
+            <th>Subject</th>
+            <th>Units</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>Subject 1</td>
+            <td>3</td>
+            <td>1.25</td>
+          </tr>
+          <tr>
+            <td>Subject 2</td>
+            <td>3</td>
+            <td>2.25</td>
+          </tr>
+          <tr>
+            <td>Subject 3</td>
+            <td>4</td>
+            <td>1.75</td>
+          </tr>
+        </table>
+        <p>Total Number of Units = 3 + 3 + 4 = 10
+        GPA = [(3 × 1.25) + (3 × 2.25) + (4 × 1.75)] ÷ 10 = 1.75</p>
+        ]]>
+    </string>
+    <string name="ModuleFourSub4_2">
+        <![CDATA[
+        <h4>Example 2:</h4>
+        <table style="width:100%">
+          <tr>
+            <th>Subject</th>
+            <th>Units</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>Subject 1</td>
+            <td>3</td>
+            <td>1.25</td>
+          </tr>
+          <tr>
+            <td>Subject 2</td>
+            <td>3</td>
+            <td>INC</td>
+          </tr>
+          <tr>
+            <td>Subject 3</td>
+            <td>4</td>
+            <td>1.75</td>
+          </tr>
+        </table>
+        <p><b>Note: Subjects whose grades are INC (incomplete) are not included in the current computation of the
+        GPA. Once the grade is completed, the GPA is recomputed to include the completed grade.</b></br>
+        Total Number of Units = 3 + 4 = 7
+        GPA = [(3 × 1.25) + (4 × 1.75)] ÷ 7 =1.5357143 = 1.54</p>
+        ]]>
+    </string>
+    <string name="ModuleFourSub4_3">
+        <![CDATA[
+        <h4>Example 3:</h4>
+        <table style="width:100%">
+          <tr>
+            <th>Subject</th>
+            <th>Units</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>Subject 1</td>
+            <td>3</td>
+            <td>1.25</td>
+          </tr>
+          <tr>
+            <td>Subject 2</td>
+            <td>3</td>
+            <td>INC</td>
+          </tr>
+          <tr>
+            <td>Subject 3</td>
+            <td>4</td>
+            <td>1.75</td>
+          </tr>
+        </table>
+        <p><b>Note: A grade of NC (no credit) does not affect the computation of the GPA.</b></br>
+        Total Number of Units = 3 + 4 = 7
+        GPA = [(3 × 1.25) + (4 × 1.75)] ÷ 7 =1.5357143 = 1.54</p>
+        ]]>
+    </string>
+    <string name="ModuleFourSub4_4">
+        <![CDATA[
+        <h4>Example 4:</h4>
+        <table style="width:100%">
+          <tr>
+            <th>Subject</th>
+            <th>Units</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>Subject 1</td>
+            <td>3</td>
+            <td>1.25</td>
+          </tr>
+          <tr>
+            <td>Subject 2</td>
+            <td>3</td>
+            <td>FA</td>
+          </tr>
+          <tr>
+            <td>Subject 3</td>
+            <td>4</td>
+            <td>1.75</td>
+          </tr>
+        </table>
+        <p><b>Note: A grade of FA (failure due to absences) is equivalent to a 5 in the computation of the GPA.</b></br>
+        Total Number of Units = 3 + 3 + 4 = 10
+        GPA = [(3 × 1.25) + (3 × 5) + (4 × 1.75)] ÷ 10 = 2.575 = 2.58</p>
+        ]]>
+    </string>
+    <string name="ModuleFourSub4_5">
+        <![CDATA[
+        <h4>Example 5:</h4>
+        <table style="width:100%">
+          <tr>
+            <th>Subject</th>
+            <th>Units</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>Subject 1</td>
+            <td>3</td>
+            <td>1.25</td>
+          </tr>
+          <tr>
+            <td>Subject 2</td>
+            <td>3</td>
+            <td>DP</td>
+          </tr>
+          <tr>
+            <td>Subject 3</td>
+            <td>4</td>
+            <td>1.75</td>
+          </tr>
+        </table>
+        <p><b>Note: A grade of DP (dropped) does not affect the computation of the GPA.</b></br>
+        Total Number of Units = 3 + 4 = 7
+        GPA = [(3 × 1.25) + (4 × 1.75)] ÷ 7 =1.5357143 = 1.54</p>
+        ]]>
+    </string>
+    <string name="ModuleFourSub4_6">
+        <![CDATA[
+        <p>For purposes of determining the continuance of a scholarship, grades in PE and NSTP will not be
+        included in the calculation of a scholars GPA. However, it is still part of the conditions of his scholarship
+        that his grades in PE and NSTP must satisfy the minimum grade requirement of the said scholarship</p>
+        ]]>
+    </string>
+
+    <string name="ModuleFourSub5">
+        <![CDATA[
+        <p>The following steps will be followed in requesting for a change of grade:</p>
+        <ol type="1">
+            <p><b>Teacher</b></p>
+            <li>Write a letter of request and explanation addressed to the Dean, with
+            supporting documents (including the teacher’s class record).</li></br>
+            <p><b>Dean</b></p>
+            <li>Recommends for approval</li></br>
+            <p><b>Registrar</b></p>
+            <li>Recommends for approval</li>
+
+        </ol>
+
+        <p>In case the request has been disapproved and the Dean is not satisfied with the disapproval of Registrar,
+        the Dean can appeal to the COO or President.</p>
+        ]]>
+    </string>
+    <string name="ModuleFourSub5_1">
+        <![CDATA[
+        <h4>Procedure on completion of grades</h4>
+        <ol type="1">
+            <p><b>Student</b></p>
+            <li>Fill out a Completion of Grades Form from the Registrar’s Office.</li></br>
+            <p><b>Registrar</b></p>
+            <li>Verify the request.</li></br>
+            <p><b>Student</b></p>
+            <li>Pay the corresponding fee to the cashier.</li></br>
+            <p><b>Student</b></p>
+            <li>Present the form to the teacher for the completion of grade.</li></br>
+            <p><b>Teacher</b></p>
+            <li>Submit the completed form to the Dean’s Office.</li></br>
+            <p><b>Dean</b></p>
+            <li>Sign the form and forwards the form to the Registrar.</li></br>
+            <p><b>Registrar</b></p>
+            <li>Post the completed grade.</li></br>
+
+        </ol>
+
+        ]]>
+    </string>
+
+    <string name="ModuleFourSub6">
+        <![CDATA[
+        <p>A student in the Dean’s List should have a GPA of at least 1.75, with no grade lower than 2.0. The
+        Registrar releases the Dean’s List every semester and provides a copy to the CSDL.</p>
+        ]]>
+    </string>
+
+    <string name="ModuleFiveSub1">
+        <![CDATA[
+        <p>A student who completed the academic and non-academic requirement of his course may apply for
+        graduation during the last term of attendance. Application for graduation will follow the following steps:</p>
+        <ol type="1">
+            <p><b>Registrar</b></p>
+            <li>Check the student records of graduating students. Any deficiency will be
+            forwarded to the colleges/departments every July.</li></br>
+            <p><b>Student</b></p>
+            <li>Fill out a Graduation Application Form at the Dean’s Office. Filling out
+            can start during the advising period of a student’s final semester.
+            Deadline for application is February 28.</li></br>
+            <p><b>Student</b></p>
+            <li>Take the final exam six weeks before graduation.</li></br>
+            <p><b>Teachers</b></p>
+            <li>Finish calculation of grades five weeks before graduation.</li></br>
+            <p><b>Deans, Program Heads</b></p>
+            <li>Deliberate the applicants for graduation four weeks before graduation. At
+            the end of the week, the list of candidates who completed academic
+            requirements will be submitted to the Registrar.</li></br>
+            <p><b>CSDL</b></p>
+            <li>Submit a list of applicants with disciplinary obligations to the Registrar
+            four weeks before graduation.</li></br>
+            <p><b>Registrar</b></p>
+            <li>Post a list of applicants cleared of all academic and disciplinary
+            obligations four weeks before graduation.</li></br>
+            <p><b>Student</b></p>
+            <li>Pay any outstanding account to the cashier. This includes graduation
+            fees.</li></br>
+            <p><b>Accounting</b></p>
+            <li>Post a final list of graduates two weeks before graduation.</li></br>
+            <p><b>Registrar</b></p>
+            <li>Print the graduation program one week before graduation.</li></br>
+            <p><b>Registrar, Students</b></p>
+            <li>Photo shoot for the yearbook one week before graduation.</li></br>
+            <p><b>Registrar, Students</b></p>
+            <li>Organize and attend the graduation ceremony.</li>
+        </ol>
+        ]]>
+    </string>
+
+    <string name="ModuleFiveSub2">
+        <![CDATA[
+        <p>The graduation hoods will follow the American Council on Education Academic Costume Code and
+        Ceremony Guide, unless otherwise stated:</p>
+        <table style="width:100%" border="1" >
+          <tr>
+            <th>College/Course</th>
+            <th>Color</th>
+          </tr>
+          <tr>
+            <td>Education</td>
+            <td>Light Blue</td>
+          </tr>
+          <tr>
+            <td>Health Sciences (Nursing, Medical Laboratory Science)</td>
+            <td>Apricot</td>
+          </tr>
+          <tr>
+            <td>Arts and Sciences</td>
+            <td>White</td>
+          </tr>
+          <tr>
+            <td>Criminology</td>
+            <td>Maroon</td>
+          </tr>
+          <tr>
+            <td>Management and Accountancy (including Hospitality and Tourism
+            Management)</td>
+            <td>Drab (Brownish Gray)</td>
+          </tr>
+          <tr>
+            <td>Engineering</td>
+            <td>Orange</td>
+          </tr>
+          <tr>
+            <td>Architecture</td>
+            <td>Brown</td>
+          </tr>
+          <tr>
+            <td>Information Technology and Computer Science</td>
+            <td>Lemon</td>
+          </tr>
+        </table>
+
+        <p>The following attire will be worn under the academic gown:</p>
+        <table style="width:100%" border="1">
+          <tr>
+            <th>College/Course</th>
+            <th>Attire</th>
+          </tr>
+          <tr>
+            <td>Education</td>
+            <td>Practice Teaching Uniform</td>
+          </tr>
+          <tr>
+            <td>Health Sciences (Nursing, Medical Laboratory Science)</td>
+            <td>Staffing Uniform for ladies, Hospital
+        Duty Uniform for men</td>
+          </tr>
+          <tr>
+            <td>Criminology</td>
+            <td>Type A Uniform</td>
+          </tr>
+          <tr>
+            <td>Hospitality Management</td>
+            <td>Banquet Uniform</td>
+          </tr>
+          <tr>
+            <td>Communication, English, Political Science, Management,
+            Accountancy, Tourism Management, Engineering, Architecture,
+            Information Technology, and Computer Science</td>
+            <td>Standard College Uniform</td>
+          </tr>
+
+        </table>
+
+        <p>Female graduates must wear closed shoes.</p>
+
+        <p>The Law School and Graduate School will not use the academic gown. Instead, they will wear Filipiniana
+        and use the Sablay for the ceremony.</p>
+
+        ]]>
+    </string>
+
+
+    <string name="ModuleFiveSub3">
+        <![CDATA[
+        <p>The following process will be followed in the nomination and selection of a class valedictorian.</p>
+        <ol type="1">
+            <p><b>Dean</b></p>
+            <li>Nominate a candidate for valedictorian after deliberation for graduation
+            and encoding of final grades (four weeks before graduation).</li></br>
+            <p><b>Dean</b></p>
+            <li>Submit the comprehensive nomination form, together with the student
+            portfolio, to the Registrar.</li></br>
+            <p><b>Registrar, CSDL Director</b></p>
+            <li>Decide on a scoring system for non-academic achievements and PEN
+            Values.</li></br>
+            <p><b>COO, CSDL Director,
+            DFAA, Guidance
+            Officer, and at least
+            two non-nominating
+            deans (this can
+            include the Basic
+            Education Dean,
+            Dean of Law School,
+            and Dean of Graduate
+            School)</b></p>
+            <li>Form an ad hoc committee for the recommendation of a valedictorian.</li></br>
+            <p><b>Committee, Registrar</b></p>
+            <li>Meet to decide on a recommendation. The committee has the prerogative
+            to interview the candidates. The Registrar will attend as a non-voting
+            member and note taker.</li></br>
+            <p><b>Committee, Registrar</b></p>
+            <li>Submit at most three names to the President.</li></br>
+            <p><b>President</b></p>
+            <li>Choose the valedictorian.</li>
+        </ol>
+        ]]>
+    </string>
 
 </resources>

@@ -25,19 +25,10 @@ public class ModuleOneSub3 extends AppCompatActivity {
         setTitle(title);
 
         String htmlAsString = getString(R.string.ModuleOneSub3);
-        String htmlAsString2 = getString(R.string.ModuleOneSub3_1);
-        String htmlAsString3 = getString(R.string.ModuleOneSub3_2);
-        String htmlAsString4 = getString(R.string.ModuleOneSub3_3);
 
         WebView webView = (WebView) findViewById(R.id.webView);
-        WebView webView2 = (WebView) findViewById(R.id.webView2);
-        WebView webView3 = (WebView) findViewById(R.id.webView3);
-        WebView webView4 = (WebView) findViewById(R.id.webView4);
 
         loadData(webView,htmlAsString);
-        loadData(webView2,htmlAsString2);
-        loadData(webView3,htmlAsString3);
-        loadData(webView4,htmlAsString4);
 
     }
 
