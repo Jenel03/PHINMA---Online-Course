@@ -94,7 +94,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:layout_weight="1"
-                            android:text="Lorem ipsum dolor sit amet amet. Velit vestibulum non. Nullam mauris mollis ut sem nunc dolor vitae lectus sagittis ligula et eu ligula litora. Vel sem vestibulum. Eros at dignissim."
+                            android:text="@string/moduleSeven_overview"
                             android:textSize="16sp" />
 
                     </LinearLayout>

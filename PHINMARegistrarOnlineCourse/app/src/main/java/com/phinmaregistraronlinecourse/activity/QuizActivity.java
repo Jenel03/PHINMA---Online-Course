@@ -1,8 +1,10 @@
-package com.phinmaregistraronlinecourse;
+package com.phinmaregistraronlinecourse.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import com.phinmaregistraronlinecourse.R;
 
 public class QuizActivity extends AppCompatActivity {
 

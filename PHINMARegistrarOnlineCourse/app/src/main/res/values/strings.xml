@@ -28,4 +28,630 @@
 
     <string name="settings">Settings</string>
 
+    <!-- Module Contents-->
+    <string name="moduleOne_overview">Lorem ipsum dolor sit amet amet. Velit vestibulum non. Nullam mauris mollis ut sem nunc dolor vitae lectus sagittis ligula et eu ligula litora. Vel sem vestibulum. Eros at dignissim."</string>
+    <string name="moduleTwo_overview">Lorem ipsum dolor sit amet amet. Velit vestibulum non. Nullam mauris mollis ut sem nunc dolor vitae lectus sagittis ligula et eu ligula litora. Vel sem vestibulum. Eros at dignissim."</string>
+    <string name="moduleThree_overview">Lorem ipsum dolor sit amet amet. Velit vestibulum non. Nullam mauris mollis ut sem nunc dolor vitae lectus sagittis ligula et eu ligula litora. Vel sem vestibulum. Eros at dignissim."</string>
+    <string name="moduleFour_overview">Lorem ipsum dolor sit amet amet. Velit vestibulum non. Nullam mauris mollis ut sem nunc dolor vitae lectus sagittis ligula et eu ligula litora. Vel sem vestibulum. Eros at dignissim."</string>
+    <string name="moduleFive_overview">Lorem ipsum dolor sit amet amet. Velit vestibulum non. Nullam mauris mollis ut sem nunc dolor vitae lectus sagittis ligula et eu ligula litora. Vel sem vestibulum. Eros at dignissim."</string>
+    <string name="moduleSix_overview">Lorem ipsum dolor sit amet amet. Velit vestibulum non. Nullam mauris mollis ut sem nunc dolor vitae lectus sagittis ligula et eu ligula litora. Vel sem vestibulum. Eros at dignissim."</string>
+    <string name="moduleSeven_overview">Lorem ipsum dolor sit amet amet. Velit vestibulum non. Nullam mauris mollis ut sem nunc dolor vitae lectus sagittis ligula et eu ligula litora. Vel sem vestibulum. Eros at dignissim."</string>
+
+
+    <string name="ModuleOneSub1">
+        <![CDATA[
+        <h4>Applicants for admission must submit upon enrollment, attached to the registration form, the following
+credentials:</h4>
+        ]]>
+    </string>
+    <string name="ModuleOneSub1_1">
+        <![CDATA[
+        <p>a. New Students</p>
+            <ol type="i">
+                <li>College Freshmen
+                    <ul>
+                        <li>Form 138 (Report Card)</li>
+                        <li>Certificate of good moral character from the Dean or Principal</li>
+                        <li>Photocopy of NSO Birth Certificate</li>
+                    </ul>
+                    <p><b>Note: Form 137 will be requested by the Registrar from the School Principal</b></p>
+                </li>
+                <li>Transferees
+                    <ul>
+                        <li>Certificate of Eligibility to Transfer (Honorable Dismissal)</li>
+                        <li>Certified true copy of complete academic records or informative copy of
+                            credits and grades previously taken, duly signed by the Registrar/Principal,
+                            or Transcript of Records/li>
+                        <li>Certificate of good moral character from the Dean or Principal</li>
+                        <li>Photocopy of NSO Birth Certificate</li>
+                    </ul>
+                </li>
+                <li>Basic Education Transferees
+                    <ul>
+                        <li>Form 138 upon enrollment</li>
+                        <li>Photocopy of NSO Birth Certificate </li>
+
+                    </ul>
+                    <p><b>Note: Form 137 will be requested by the Registrar from the School Principal</b></p>
+                </li>
+                <li>Cross-enrollees
+                    <ul>
+                        <li>Permit to cross-enroll from the school of origin or another school where
+                        simultaneously enrolled</li>
+                    </ul>
+                </li>
+                <li>Law Students
+                    <ul>
+                        <li>Certificate of Eligibility for Entrance to Law (C-1) issued by CHED</li>
+                        <li>Transcript of record of a prerequisite degree course in accordance with the
+                            Rules of Court with Special Order (S.O.) for graduation</li>
+                        <li>Photocopy NSO birth Certificate or Marriage Certificate</li>
+                    </ul>
+                </li>
+                <li>Graduate Students
+                    <ul>
+                        <li>Transcript of Records of a degree course with Special Order of graduation</li>
+                        <li>NSO birth Certificate or Marriage Certificate</li>
+                    </ul>
+                </li>
+            </ol>
+        ]]>
+    </string>
+
+    <string name="ModuleOneSub1_2">
+        <![CDATA[
+        <p>b. Resident Students</p>
+            <ul>
+                <li>Checklist of subjects taken and passed and upon request, clearance from the
+                business or accounting office</li>
+            </ul>
+        ]]>
+    </string>
+
+    <string name="ModuleOneSub1_3">
+        <![CDATA[
+        <p>c. Half Merit/Full Merit/Study-Now-Pay-Later Awardees (CHED) and other scholars</p>
+            <ul>
+                <li>Certificate of entitlement; other applicable credentials as prescribed herein </li>
+            </ul>
+        ]]>
+    </string>
+
+    <string name="ModuleOneSub1_4">
+        <![CDATA[
+        <p>d. Foreign Students</p>
+            <ul>
+                <li>Study permit (duly issued by the Bureau of Youth Affairs, Foreign Students
+                    and Foreign Schools, CHED upon presentation of student visa or immigrant
+                    visa) </li>
+                <li>Alien Certificate of Registration </li>
+                <li>Statement of Eligibility for Admission to a particular course in the
+                    Philippines</li>
+                <li>Immigrant Certificate of Registration </li>
+                <li>Certificate of Identity (from Embassy) </li>
+                <li>Three (3) photocopies of passport and visa </li>
+                <li>Three (3) photocopies of Alien Certificate of Alien Registration, issued by
+                    the Bureau of Immigration</li>
+                <li>Other documents that may be prescribed</li>
+                <li>Three (3) copies of recent 2”x 2”photo</li>
+            </ul>
+        ]]>
+    </string>
+
+
+    <string name="ModuleOneSub2">
+        <![CDATA[
+        <h4>Returning students will be admitted in the curriculum in effect at the time of his admission. Students
+            seeking readmission should obtain a summary of grades from the Office of the registrar for evaluation by
+            the Dean.</h4>
+
+        ]]>
+    </string>
+    <string name="ModuleOneSub2_1">
+        <![CDATA[
+        <h4>However, for a returning student who wants to finish his/her course but was originally enrolled in an
+            already phased-out version of the curriculum, the following guidelines shall apply</h4>
+        <ol type="1">
+            <li>The student must follow the latest curriculum.</li>
+            <li>The Dean in charge of his course identifies the subjects from the old curriculum that may be
+                credited.</li>
+            <li>The student must complete subjects in the latest curriculum.</li>
+        </ol>
+        ]]>
+    </string>
+
+
+    <string name="ModuleOneSub3">
+        <![CDATA[
+        <h4>Our schools will only accept the following transferees:</h4>
+        <ul>
+            <li>for board courses
+                <ul>
+                    <li>transferees who need at least 3 terms to finish their degrees, and</li>
+                    <li>transferees who meet the applicable year level retention standards of the course in which
+                    they plan to enroll</li>
+                </ul>
+            </li>
+            <li>for nonboard courses
+                <ul>
+                    <li>transferees who need at least 2 terms to finish their degrees, and</li>
+                    <li>transferees who meet the applicable year level retention standards of the course in which
+                    they plan to enroll</li>
+                </ul>
+            </li>
+        </ul>
+        ]]>
+    </string>
+
+    <string name="ModuleOneSub3_1">
+        <![CDATA[
+        <h4>The number of terms will be determined by the deans during the validation of the subjects taken by the
+            transferee in his current school. Summer terms are not included. </h4>
+
+        ]]>
+    </string>
+
+    <string name="ModuleOneSub3_2">
+        <![CDATA[
+        <h4>To meet the General Education requirements of PEN</h4>
+        <ol type="1">
+            <li>Transferees who have had 6 units of English in their previous school will be required to take
+                English 3 and English 4.</li>
+            <li>Transferees taking up Bachelor in Elementary Education, Bachelor in Secondary Education, or
+                any AB degree, who have had 9 units of English in their previous school will be required to take
+                an English 3 validation exam. If they pass the exam, they will be required to take English 4 only.
+                If they do not pass, they will be required to take English 3 and English 4.</li>
+            <li>Transferees who have had 3 units of IT will be required to take an IT 1 validation exam. If they
+                pass the exam, they will be required to take IT 2 only. If they do not pass the exam, they will be
+                required to take IT 1 and IT 2. </li>
+        </ol>
+        ]]>
+    </string>
+
+    <string name="ModuleOneSub3_3">
+        <![CDATA[
+        <h4>A transferee may decide when he will take the validation exam. He may also decide when he will enroll
+         in any of the subjects mentioned above.
+        </h4>
+
+        ]]>
+    </string>
+
+
+    <string name="ModuleOneSub4">
+        <![CDATA[
+        <h4>The following steps will be followed for enrollment of new students:</h4>
+        <ol type="1">
+            <p><b>Registration Officer</b></p>
+            <li>Give the enrollee a blank copy of the Student Permanent Record (SPR)
+            and ask him to fill it out.</li></br>
+            <p><b>Enrollee</b></p>
+            <li>Fill out the SPR and submit it, along with other requirements, to the
+            Registrar.</li></br>
+            <p><b>Registration Officer</b></p>
+            <li>Receive the SPR and requirements. </li></br>
+            <p><b>Registration Officer</b></p>
+            <li>Give the Temporary Registration Form (TRF) to the enrollee.</li></br>
+            <p><b>Student</b></p>
+            <li>Proceed to Cashier’s window. </li></br>
+            <p><b>Cashier</b></p>
+            <li>Tag student with applicable scholarships.</li></br>
+            <p><b>Enrollee</b></p>
+            <li>Pay down payment at the Cashier’s window. </li></br>
+            <p><b>Registration Officer</b></p>
+            <li>Encode schedules and print the Official Registration Form (ORF) </li></br>
+            <p><b>Enrollee</b></p>
+            <li>Claim Student ID and Student Handbook from the IT Department
+            </li></br>
+            <p><b>Enrollee</b></p>
+            <li>Buy/claim books and uniforms from the bookstore. </li>
+        </ol>
+        ]]>
+    </string>
+
+    <string name="ModuleOneSub5">
+        <![CDATA[
+        <h4>The following steps will be followed for enrollment of old students:</h4>
+        <ol type="1">
+            <p><b>Dean</b></p>
+            <li>Determine what subjects the student will enroll, but no schedule is given.
+                Give the enrollee a copy of his Student Permanent Record (SPR) and ask
+                him to update it.
+            </li></br>
+            <p><b>Enrollee</b></p>
+            <li>Update the SPR and submit it.
+            </li></br>
+            <p><b>Dean</b></p>
+            <li>Receive the SPR and give the advising form. </li></br>
+            <p><b>Student</b></p>
+            <li>Proceed to Cashier’s window</li></br>
+            <p><b>Cashier</b></p>
+            <li>Tag student with applicable scholarships</li></br>
+            <p><b>Enrollee</b></p>
+            <li>Pay down payment at the Cashier’s window. </li></br>
+            <p><b>Registration Officer </b></p>
+            <li>Encode schedules and print the Official Registration Form (ORF).
+                Validate Student ID.
+            </li></br>
+            <p><b>Enrollee</b></p>
+            <li>If student wishes to pay in full, pay the full amount at the Cashier’s
+                window. </li></br>
+            <p><b>Enrollee</b></p>
+            <li>Buy/claim books and uniforms from the bookstore
+            </li></br>
+        </ol>
+        ]]>
+    </string>
+
+    <string name="ModuleOneSub6">
+        <![CDATA[
+        <h4>The following steps will be followed for enrollment of old students:</h4>
+        <ol type="1">
+            <p><b>Dean</b></p>
+            <li>Determine what subjects the student will enroll, but no schedule is given.
+            Give the advising form. </li></br>
+            <p><b>Registration Officer </b></p>
+            <li>Give the enrollee a blank copy of the Student Permanent Record (SPR)
+            and ask him to fill it out.
+            </li></br>
+            <p><b>Enrollee</b></p>
+            <li>Fill out the SPR and submit it, along with other requirements, to the
+            Registrar</li></br>
+            <p><b>Registration Officer </b></p>
+            <li>Receive the SPR and requirements.</li></br>
+            <p><b>Student</b></p>
+            <li>Proceed to Cashier’s window</li></br>
+            <p><b>Cashier</b></p>
+            <li>Tag student with applicable scholarships. </li></br>
+            <p><b>Enrollee</b></p>
+            <li>Pay down payment at the Cashier’s window. </li></br>
+            <p><b>Registration Officer </b></p>
+            <li>Encode schedules and print the Official Registration Form (ORF)</li></br>
+            <p><b>Enrollee</b></p>
+            <li>Claim Student ID and Student Handbook from the IT Department
+            </li></br>
+            <p><b>Enrollee</b></p>
+            <li>Buy/claim books and uniforms from the bookstore.
+            </li>
+        </ol>
+        ]]>
+    </string>
+
+
+    <string name="ModuleTwoSub1">
+        <![CDATA[
+        <h4>Generally, the subject load may not exceed the load as written in the approved curriculum. However, a
+            graduating student may be allowed additional subject-loads of not more than six (6) academic units in
+            excess of the normal load prescribed in the curriculum for the last school term. </h4>
+        ]]>
+    </string>
+
+    <string name="ModuleTwoSub2">
+        <![CDATA[
+        <h4>The year level of a student will be based on the lowest year level of the major subjects he or she is
+            currently enrolled in</h4>
+        ]]>
+    </string>
+
+    <string name="ModuleTwoSub3">
+        <![CDATA[
+        <h4>If the student wishes to shift courses before he has enrolled</h4>
+        <ol type="1">
+            <p><b>Student</b></p>
+            <li>Fill out a Shifting Form from the Registrar’s Office. </li></br>
+            <p><b>Student</b></p>
+            <li>Present the form to the current Dean of the department to which he
+            belongs for approval
+            </li></br>
+            <p><b>Student</b></p>
+            <li>Submit the form to the department he wishes to transfer to for the Dean’s
+            signature. </li></br>
+            <p><b>Student</b></p>
+            <li>Bring the completed form to the Registrar’s Office upon enrollment.</li></br>
+
+        </ol>
+        ]]>
+    </string>
+    <string name="ModuleTwoSub3_1">
+        <![CDATA[
+        <h4>If the student wishes to shift courses after he has enrolled</h4>
+        <ol type="1">
+            <p><b>Student</b></p>
+            <li>Fill out a Shifting Form and an Adding/Dropping Form from the
+            Registrar’s Office</li></br>
+            <p><b>Student</b></p>
+            <li>Present the Shifting Form to the current Dean of the department to which
+            he belongs for approval.
+            </li></br>
+            <p><b>Student</b></p>
+            <li>Submit both forms to the department he wishes to transfer to for the
+            Dean’s signature. </li></br>
+            <p><b>Student</b></p>
+            <li>Present both forms to the Registrar’s Office for verification.</li></br>
+            <p><b>Student</b></p>
+            <li>Pay the corresponding fee to the Cashier. </li></br>
+            <p><b>Student</b></p>
+            <li>Present the form and official receipt to the Registrar’s Office for
+            encoding and issuance of the adjusted registration form. </li></br>
+            <p><b>Student</b></p>
+            <li>Present the adjusted registration form to the cashier for updating of
+            payment and stamp.
+            </li></br>
+
+        </ol>
+        ]]>
+    </string>
+
+    <string name="ModuleTwoSub3_2">
+        <![CDATA[
+        <p>Shifting is not allowed beyond the enrollment period.</p>
+        <p>Acceptance of a student shifting will follow the same rules as the acceptance of a transferee.</p>
+        <p>Our schools will accept only the following course shifters:</p>
+        <ul>
+            <li>for board courses
+                <ul>
+                    <li>course shifters who need at least 3 terms to finish their degrees, and </li>
+                    <li>course shifters who meet the applicable year level retention standards of the course in
+                    which they plan to enroll</li>
+                </ul>
+            </li>
+
+            <li>for nonboard courses
+                <ul>
+                    <li>course shifters who need at least 2 terms to finish their degrees, and </li>
+                    <li>course shifters who meet the applicable year level retention standards of the course in
+                    which they plan to enroll
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>The number of terms will be determined by the deans during the validation of the subjects taken by the
+        course shifter in his current course. Summer terms are not included.
+        </p>
+        ]]>
+    </string>
+
+
+    <string name="ModuleTwoSub4">
+        <![CDATA[
+        <h4>Cross-enrollment by PEN students is discouraged and shall be subject to PEN policies, rules, and
+        regulations. Particularly:</h4>
+        <ol type="1">
+            <li>A PEN student may not cross-enroll a board subject</li>
+            <li>At the discretion of the PEN School, a PEN student's request for cross-enrollment of a nonboard
+                subject may be allowed in accordance with PEN's academic policies and standards on retention,
+                promotion, transfer and cross-enrollment. </li>
+        </ol>
+        ]]>
+    </string>
+    <string name="ModuleTwoSub4_1">
+        <![CDATA[
+        <h4>Procedure for securing a permit to cross-enroll</h4>
+        <ol type="1">
+            <p><b>Student</b></p>
+            <li>Write a letter stating the request and justification for cross-enrollment</li></br>
+            <p><b>Student</b></p>
+            <li>Submit the letter to the Dean. </li></br>
+            <p><b>Dean</b></p>
+            <li>Endorses the request. </li></br>
+            <p><b>Student</b></p>
+            <li>Submit the letter and endorsement to the Office of the Registrar.</li></br>
+            <p><b>Registrar</b></p>
+            <li>Approve the request. </li></br>
+
+        </ol>
+        ]]>
+    </string>
+    <string name="ModuleTwoSub4_2">
+        <![CDATA[
+        <p>If a student of another school wishes to cross-enroll in a PEN School, he must present a cross-enrollment
+        permit from his school's Registrar. The permit should state the total number of units and the subjects that
+        will be taken. </p>
+
+        ]]>
+    </string>
+
+
+    <string name="ModuleTwoSub5">
+        <![CDATA[
+        <p>A student may, for valid reasons, totally withdraw from enrollment or drop certain subjects within two (2)
+        weeks after the first day of classes. An application form for this purpose is available in the Registrar’s
+        Office. The Dean, Registrar, and Accountant must sign it. In case of total withdrawal, the student may
+        notify in writing the teachers and school officials concerned if he is unable to come personally. </p>
+
+        ]]>
+    </string>
+    <string name="ModuleTwoSub5_1">
+        <![CDATA[
+        <p>There are prescribed fees for dropping of subjects. However, there are no charges for changing and/or
+            dropping of subject or schedule under the following circumstances:
+        </p>
+
+        <ol type="a">
+            <li>error in the announced schedule, </li></br>
+            <li>dissolution of section or subject, </li></br>
+            <li>a change in time schedule or subject by the school, and </li></br>
+            <li>when forced on the student by reason of other scholastic requirements. </li></br>
+
+        </ol>
+
+        <p>Payment and refund of tuition and other fees shall be governed by the pertinent rules to that effect. </p>
+
+        ]]>
+    </string>
+    <string name="ModuleTwoSub5_2">
+        <![CDATA[
+        <h4>The following procedure applies to adding/dropping/changing of subjects. Adding/dropping/changing of
+            subjects can be done only from the start of classes until the last day of enrollment.
+        </h4>
+        <ol type="1">
+            <p><b>Student</b></p>
+            <li>Fill out an Adding/Dropping Form from the Registrar’s Office. </li></br>
+            <p><b>Student</b></p>
+            <li>Present the form to the Dean for approval and signature.</li></br>
+            <p><b>Student</b></p>
+            <li>Present the form to the Registrar’s Office for verification. </li></br>
+            <p><b>Student</b></p>
+            <li>. Pay the corresponding fee to the Cashier. </li></br>
+            <p><b>Student</b></p>
+            <li>Present the form and official receipt to the Registrar’s Office for
+                encoding and issuance of the adjusted registration form.
+            </li></br>
+            <p><b>Student</b></p>
+            <li>Present the adjusted registration form to the cashier for updating of
+            payment and stamp. </li></br>
+
+        </ol>
+        ]]>
+    </string>
+    <string name="ModuleTwoSub5_3">
+        <![CDATA[
+        <h4>The following procedure applies when a student drops all subjects during the semester, given that the
+            student will not transfer schools and has plans of coming back.
+        </h4>
+        <ol type="1">
+            <p><b>Student</b></p>
+            <li>Fill out a Total Dropping Form from the Registrar’s Office. </li></br>
+            <p><b>Student</b></p>
+            <li>Present the form to Guidance, Program Head, Dean, and CSDL for
+                signature. Offices may interview and write down remarks on the form.</li></br>
+            <p><b>Student</b></p>
+            <li>Proceed to cashier for assessment of balance. </li></br>
+            <p><b>Student</b></p>
+            <li>Submit the form to Registrar. </li></br>
+            <p><b>Registrar</b></p>
+            <li>Update student records. Subjects enrolled in the current semester will be
+                given a grade of DP, which is equivalent to a 0 in the computation of the
+                GPA</li></br>
+            <p><b>Student</b></p>
+            <li>Upon returning to school, balance of payment is waived (tuition,
+                laboratory fees and miscellaneous fees only). </li></br>
+
+        </ol>
+        ]]>
+    </string>
+    <string name="ModuleTwoSub5_4">
+        <![CDATA[
+        <h4>A student who drops out and does not go through this process will have the following consequences: </h4>
+        <ol type="1">
+            <li>Subjects enrolled in the current semester will be given a grade of FA, which is equivalent to a 5 in
+                the computation of the GPA.
+            </li>
+            <li>Upon return, balance is to be paid in full. </li>
+        </ol>
+        ]]>
+    </string>
+    <string name="ModuleTwoSub5_5">
+        <![CDATA[
+        <h4>The following procedure applies when a student withdraws from the school, that is, the student leaves the
+            school and requests for transfer credentials.
+        </h4>
+        <ol type="1">
+            <p><b>Student</b></p>
+            <li>Fill out a Withdrawal Form from the Registrar’s Office. </li></br>
+            <p><b>Student</b></p>
+            <li>Present the form to Guidance, Program Head, Dean, and CSDL for
+            signature. Offices may interview and write down remarks on the form. </li></br>
+            <p><b>Student</b></p>
+            <li>Proceed to cashier for payment of fees and processing and turnover of
+            ID. If the student withdrew before the start of classes, the school will
+            refund the down payment, except the registration fee and ID fee.
+            </li></br>
+            <p><b>Student</b></p>
+            <li>Submit the form to Registrar. </li></br>
+            <p><b>Registrar</b></p>
+            <li>Update student records. Subjects enrolled in the current semester will be
+            given a grade of DP, which is equivalent to a 0 in the computation of the
+            GPA. </li></br>
+
+        </ol>
+        ]]>
+    </string>
+
+
+    <string name="ModuleTwoSub6">
+        <![CDATA[
+        <h4>If students request that a class be opened for a subject that is typically not offered in the semester (i.e., an
+            off-term class), the following guidelines to process the request will apply
+        </h4>
+        <ol type="1">
+           <li>Offering of off-term classes is subject to the approval of the COO.
+           </li>
+           <li>The decision to offer off-term classes must be done before classes start.
+           </li>
+           <li>Off-term classes will be offered only to students who have to catch up because they were delayed
+            in terms of curriculum. Some valid reasons for a student to request for off-term classes are:
+           <ol type="a">
+               <li>to retake a subject that she failed to pass </li>
+               <li>to make up for the delay caused by curriculum changes made by the school </li>
+               <li>to make up for the delay caused by a previous curriculum (in her previous school) not
+                being in sync with our curriculum. </li>
+               <li>to graduate in the coming semester or school year if she is allowed to take off-termclasses. </li>
+            </ol>
+           </li>
+           <li>Off-term classes will not be offered to students who want to take subjects even before it is
+            required of them to take it.</li>
+           <li>Minimum class size for off-term classes is 15 students. The COO has the prerogative to increase
+            the minimum class size.
+           </li>
+           <li>If the minimum class size is not met, the class will be dissolved unless the enrolled students agree
+            to pay for the deficit.
+           </li>
+        </ol>
+        ]]>
+    </string>
+    <string name="ModuleTwoSub6_1">
+        <![CDATA[
+        <h4>Procedure for requesting off-term classes:</h4>
+        <ol type="1">
+            <p><b>Students</b></p>
+            <li>Request for an off-term class from the Dean. </li></br>
+            <p><b>Dean</b></p>
+            <li>Evaluate the request based on the criteria for opening of a special class.</li></br>
+            <p><b>Dean</b></p>
+            <li>Forward the request to Accounting for special assessment computation. </li></br>
+            <p><b>Dean</b></p>
+            <li>Present to students if fees are acceptable in order to proceed. </li></br>
+            <p><b>Dean</b></p>
+            <li>Present to Registrar for review. </li></br>
+            <p><b>Registrar</b></p>
+            <li>Submit to COO for approval. </li></br>
+            <p><b>COO</b></p>
+            <li>Approves the request for off-term classes. </li></br>
+            <p><b>Registrar</b></p>
+            <li>Open the subject. </li></br>
+            <p><b>Accounting</b></p>
+            <li>Set up the fees. </li></br>
+            <p><b>Students</b></p>
+            <li>Enroll the requested off-term subject</li></br>
+            <p><b>Accounting</b></p>
+            <li>Monitor the actual number of enrollees, and recomputed if the actual
+            number is lower than the approved number of students </li></br>
+
+        </ol>
+        ]]>
+    </string>
+
+
+    <string name="ModuleTwoSub7">
+        <![CDATA[
+        <p>Credentials submitted by 1st-year college students may be withdrawn if withdrawal of enrollment is made
+            within 2 weeks after the start of classes. </p>
+        <p><b>Note: Other cases concerning enrollment, which are not covered by the foregoing rules, shall be treated in
+            accordance with the rules and regulations of PEN and CHEd and DepEd.</b></p>
+        ]]>
+    </string>
+
+    <string name="ModuleTwoSub8">
+        <![CDATA[
+        <p>Late enrollment starts on the 6th day of classes for old students and on the 2nd day of classes for new
+           students. Enrollment ends on the last day of June for the first semester and on the last day of November
+           for the second semester. A corresponding late enrollment fee will be charged for late enrollment. </p>
+
+        ]]>
+    </string>
+
+
+
 </resources>

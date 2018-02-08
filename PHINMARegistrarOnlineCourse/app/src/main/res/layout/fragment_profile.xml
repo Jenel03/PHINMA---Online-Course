@@ -46,6 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fillViewport="true"
+        android:padding="2dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
@@ -54,15 +55,40 @@
             android:layout_height="wrap_content"
             app:cardBackgroundColor="#fff"
             app:cardCornerRadius="1dp"
-            app:cardElevation="1dip"
+            app:cardElevation="3dip"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="3"
-                android:background="#f7f6f6"
+                android:weightSum="5"
+                android:background="#fff"
                 android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/lblProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.4"
+                        android:text="About"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textAlignment="viewStart"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@android:color/darker_gray"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -80,12 +106,12 @@
                         android:text="Name"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:textAlignment="viewEnd"/>
+                        android:textAlignment="viewStart"/>
 
                     <TextView
                         android:id="@+id/txtName"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight=".6"
                         android:text="Eeje S. Manipon"
                         android:textSize="18sp"
@@ -108,12 +134,12 @@
                         android:text="Email"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:textAlignment="viewEnd"/>
+                        android:textAlignment="viewStart"/>
 
                     <TextView
                         android:id="@+id/txtEmail"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight=".6"
                         android:text="epongmanipon@gmail.com"
                         android:textSize="18sp"
@@ -136,16 +162,17 @@
                         android:text="Employee ID"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:textAlignment="viewEnd"/>
+                        android:textAlignment="viewStart"/>
 
                     <TextView
                         android:id="@+id/txtID"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight=".6"
                         android:text="03-1415-01696"
                         android:textSize="18sp"
-                        android:paddingStart="10dp"/>
+                        android:paddingStart="10dp"
+                        android:textAlignment="viewStart"/>
 
                 </LinearLayout>
             </LinearLayout>

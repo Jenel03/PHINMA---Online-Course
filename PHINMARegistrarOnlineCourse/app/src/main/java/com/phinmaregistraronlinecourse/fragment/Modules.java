@@ -77,25 +77,25 @@ public class Modules extends Fragment{
                 R.drawable.sample,
                 R.drawable.sample};
 
-        Module a = new Module(1,"General Admission Policy", 13, covers[0]);
+        Module a = new Module(1,"General Admission Policy", 6, covers[0]);
         moduleList.add(a);
 
         a = new Module(2,"Student Enrollment", 8, covers[1]);
         moduleList.add(a);
 
-        a = new Module(3,"Enrollment Preparations", 11, covers[2]);
+        a = new Module(3,"Enrollment Preparations", 4, covers[2]);
         moduleList.add(a);
 
-        a = new Module(4,"Grading", 12, covers[3]);
+        a = new Module(4,"Grading", 6, covers[3]);
         moduleList.add(a);
 
-        a = new Module(5,"Graduation", 14, covers[4]);
+        a = new Module(5,"Graduation", 3, covers[4]);
         moduleList.add(a);
 
-        a = new Module(6,"Registrar's Documents and Transaction Standards", 1, covers[5]);
+        a = new Module(6,"Registrar's Documents and Transaction Standards", 4, covers[5]);
         moduleList.add(a);
 
-        a = new Module(7,"Academic and Non-Academic Awards and Scholarships", 11, covers[6]);
+        a = new Module(7,"Academic and Non-Academic Awards and Scholarships", 9, covers[6]);
         moduleList.add(a);
 
 

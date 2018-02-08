@@ -42,7 +42,7 @@ public class Profile extends Fragment {
                     //collapsingToolbarLayout.setTitle(name);
                     isShow = true;
                 } else if (isShow) {
-                    collapsingToolbarLayout.setTitle(" ");//carefull there should a space between double quote otherwise it wont work
+                    collapsingToolbarLayout.setTitle("Eeje Manipon");//carefull there should a space between double quote otherwise it wont work
                     isShow = false;
                 }
             }
