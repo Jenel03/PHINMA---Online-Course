@@ -57,7 +57,7 @@ public class Modules extends Fragment{
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 
-        prepareAlbums();
+        prepareModule();
 
         try {
 
@@ -67,7 +67,7 @@ public class Modules extends Fragment{
         return view;
     }
 
-    private void prepareAlbums() {
+    private void prepareModule() {
         int[] covers = new int[]{
                 R.drawable.sample,
                 R.drawable.sample,
