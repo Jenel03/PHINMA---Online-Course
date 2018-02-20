@@ -741,7 +741,7 @@
     <string name="ModuleFourSub4">
         <![CDATA[
         <h4>The PEN Schools follow a 10-point GPA system:</h4>
-        <table style="width:100%">
+        <table style="width:100%" border="1">
           <tr>
             <th>Grade</th>
             <th>Remarks</th>
@@ -795,7 +795,7 @@
     <string name="ModuleFourSub4_1">
         <![CDATA[
         <h4>Example 1:</h4>
-        <table style="width:100%">
+        <table style="width:100%" border="1">
           <tr>
             <th>Subject</th>
             <th>Units</th>
@@ -824,7 +824,7 @@
     <string name="ModuleFourSub4_2">
         <![CDATA[
         <h4>Example 2:</h4>
-        <table style="width:100%">
+        <table style="width:100%" border="1">
           <tr>
             <th>Subject</th>
             <th>Units</th>
@@ -855,7 +855,7 @@
     <string name="ModuleFourSub4_3">
         <![CDATA[
         <h4>Example 3:</h4>
-        <table style="width:100%">
+        <table style="width:100%" border="1">
           <tr>
             <th>Subject</th>
             <th>Units</th>
@@ -885,7 +885,7 @@
     <string name="ModuleFourSub4_4">
         <![CDATA[
         <h4>Example 4:</h4>
-        <table style="width:100%">
+        <table style="width:100%" border="1">
           <tr>
             <th>Subject</th>
             <th>Units</th>
@@ -915,7 +915,7 @@
     <string name="ModuleFourSub4_5">
         <![CDATA[
         <h4>Example 5:</h4>
-        <table style="width:100%">
+        <table style="width:100%" border="1">
           <tr>
             <th>Subject</th>
             <th>Units</th>
