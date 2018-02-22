@@ -13,10 +13,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.phinmaregistraronlinecourse.R;
+import com.phinmaregistraronlinecourse.connection.SharedPrefManager;
 import com.phinmaregistraronlinecourse.fragment.Achievements;
 import com.phinmaregistraronlinecourse.fragment.Awards;
 import com.phinmaregistraronlinecourse.fragment.Modules;
@@ -198,8 +200,11 @@ public class MainActivity extends AppCompatActivity{
                         CURRENT_TAG = TAG_SCORES;
                         break;
                     case R.id.nav_logout:
-                        startActivity(new Intent(MainActivity.this, SplashScreen.class));
+                        SharedPrefManager.getInstance(MainActivity.this).logout();
+                        startActivity(new Intent(MainActivity.this, Login.class));
+
                         drawer.closeDrawers();
+                        finish();
                         return true;
 
                     default:

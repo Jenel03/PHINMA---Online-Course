@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context="com.phinmaregistraronlinecourse.activity.Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="@dimen/margin_side_medium"
+        android:layout_marginRight="@dimen/margin_side_medium"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/loginback"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView20"
+            android:layout_centerHorizontal="true"
+            android:layout_alignStart="@id/btnLogin"
+            android:layout_alignEnd="@id/btnLogin"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/logocolored" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView10"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="end"
+            android:text="REGISTRAR"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/title_size_large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="15dp"
+            android:text="ONLINE COURSE"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/title_size_large"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_design"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:maxLength="15" />
+
+
+        <EditText
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext_design"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_https_black_24dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="15" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtPassword"
+            android:layout_alignStart="@+id/txtPassword"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@color/colorAccent"
+            android:layout_above="@id/forgotPassword"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_size_medium"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_large"/>
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:text="Forgot Password?"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/title_size_medium"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

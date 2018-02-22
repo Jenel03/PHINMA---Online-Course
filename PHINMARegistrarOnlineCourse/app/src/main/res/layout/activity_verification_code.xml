@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phinmaregistraronlinecourse.activity.VerificationCode"
+    android:background="@drawable/side_nav_bar">
+
+
+    <RelativeLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="@dimen/margin_side_medium"
+        android:layout_marginRight="@dimen/margin_side_medium"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/loginback"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/verficationCode"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:gravity="center"
+            android:text="Please check your email and enter your verification code below."
+            android:textColor="#fff"
+            android:textSize="@dimen/title_size_large"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/verficationCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@drawable/edittext_design"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_https_black_24dp"
+            android:hint="Verification Code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:layout_marginLeft="@dimen/margin_side_medium"
+            android:layout_marginRight="@dimen/margin_side_medium"/>
+
+        <Button
+            android:id="@+id/btnVerify"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/verficationCode"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="@color/colorAccent"
+            android:text="Verify"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title_size_medium"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_side_large"
+            android:layout_marginRight="@dimen/margin_side_large"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

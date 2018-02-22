@@ -7,17 +7,29 @@
 
 
     <dimen name="item_offset">10dp</dimen>
+
     <dimen name="detail_backdrop_height">250dp</dimen>
     <dimen name="backdrop_title">30dp</dimen>
     <dimen name="backdrop_subtitle">18dp</dimen>
+
     <dimen name="margin">5dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_large">15dp</dimen>
+
+    <dimen name="margin_side_small">20dp</dimen>
+    <dimen name="margin_side_medium">30dp</dimen>
+    <dimen name="margin_side_large">40dp</dimen>
+
     <dimen name="radius">0dp</dimen>
     <dimen name="height">160dp</dimen>
     <dimen name="padding">10dp</dimen>
+    <dimen name="padding_bottom">5dp</dimen>
+
     <dimen name="title_size">15dp</dimen>
     <dimen name="title_size_medium">17dp</dimen>
     <dimen name="title_size_large">19dp</dimen>
-    <dimen name="padding_bottom">5dp</dimen>
+
+
     <dimen name="subtitle_size">12dp</dimen>
 
 </resources>

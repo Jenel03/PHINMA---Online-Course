@@ -26,6 +26,8 @@
         <item>Scores</item>
     </string-array>
 
+
+
     <string name="settings">Settings</string>
 
     <!-- Module Contents-->
@@ -702,7 +704,6 @@
 
         ]]>
     </string>
-
 
 
     <string name="ModuleFourSub1">
