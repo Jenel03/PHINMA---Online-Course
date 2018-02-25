@@ -16,14 +16,20 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
+import com.android.volley.toolbox.ImageLoader;
 import com.phinmaregistraronlinecourse.R;
+import com.phinmaregistraronlinecourse.adapter.UserData;
+import com.phinmaregistraronlinecourse.connection.Constants;
 import com.phinmaregistraronlinecourse.connection.SharedPrefManager;
 import com.phinmaregistraronlinecourse.fragment.Achievements;
 import com.phinmaregistraronlinecourse.fragment.Awards;
 import com.phinmaregistraronlinecourse.fragment.Modules;
 import com.phinmaregistraronlinecourse.fragment.Profile;
 import com.phinmaregistraronlinecourse.fragment.Scores;
+import com.phinmaregistraronlinecourse.other.CircularNetworkImageView;
+import com.phinmaregistraronlinecourse.volley.AppController;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -31,6 +37,8 @@ public class MainActivity extends AppCompatActivity{
     private DrawerLayout drawer;
     private View navHeader;
     private Toolbar toolbar;
+    CircularNetworkImageView image;
+    TextView txtName;
 
     // index to identify current nav menu item
     public static int navItemIndex = 0;
@@ -49,6 +57,7 @@ public class MainActivity extends AppCompatActivity{
     // flag to load home fragment when user presses back key
     private boolean shouldLoadHomeFragOnBackPress = true;
     private Handler mHandler;
+    UserData user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +67,7 @@ public class MainActivity extends AppCompatActivity{
         setSupportActionBar(toolbar);
 
         mHandler = new Handler();
+        user = SharedPrefManager.getInstance(getApplicationContext()).getUser();
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -65,7 +75,11 @@ public class MainActivity extends AppCompatActivity{
 
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
-
+        image = (CircularNetworkImageView) navHeader.findViewById(R.id.imgEmployeeProfile);
+        txtName = (TextView) navHeader.findViewById(R.id.txtEmployeeName);
+        ImageLoader netImageLoader= AppController.getInstance().getImageLoader();
+        image.setImageUrl(Constants.IMAGE_URL+user.getImage(), netImageLoader);
+        txtName.setText(user.getFirstname()+" "+user.getLastname());
         // load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
 

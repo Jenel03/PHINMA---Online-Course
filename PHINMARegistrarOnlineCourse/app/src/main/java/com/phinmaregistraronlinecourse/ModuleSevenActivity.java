@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.phinmaregistraronlinecourse.activity.QuizConfirmation;
 import com.phinmaregistraronlinecourse.adapter.SubModule;
 import com.phinmaregistraronlinecourse.adapter.SubModuleAdapter;
 import com.phinmaregistraronlinecourse.moduleSeven.ModuleSevenSub1;
@@ -131,6 +132,10 @@ public class ModuleSevenActivity extends AppCompatActivity {
                     intent.putExtra("title",subModule.getTitle());
                     startActivity(intent);
                 }
+                else if(number==10){
+                    Intent intent=new Intent(getApplicationContext(),QuizConfirmation.class);
+                    startActivity(intent);
+                }
             }
 
             @Override
@@ -145,26 +150,32 @@ public class ModuleSevenActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        int[] image = new int[]{
+                R.drawable.ic_file_document_grey600_24dp,
+                R.drawable.ic_file_question_grey600_24dp};
+
         adapter = new SubModuleAdapter(subModuleList);
         subModuleList.clear();
 
-        SubModule a = new SubModule(1,"Academic Awards: Graduate School");
+        SubModule a = new SubModule(1,"Academic Awards: Graduate School",image[0]);
         subModuleList.add(a);
-        a = new SubModule(2,"Academic Awards: Tertiary");
+        a = new SubModule(2,"Academic Awards: Tertiary",image[0]);
         subModuleList.add(a);
-        a = new SubModule(3,"Academic and Non-Academic Awards and Scholarships");
+        a = new SubModule(3,"Academic and Non-Academic Awards and Scholarships",image[0]);
         subModuleList.add(a);
-        a = new SubModule(4,"Non-Academic Awards: Graduate School");
+        a = new SubModule(4,"Non-Academic Awards: Graduate School",image[0]);
         subModuleList.add(a);
-        a = new SubModule(5,"Non-Academic Awards: Tertiary");
+        a = new SubModule(5,"Non-Academic Awards: Tertiary",image[0]);
         subModuleList.add(a);
-        a = new SubModule(6,"Non-Academic Awards: Basic Education");
+        a = new SubModule(6,"Non-Academic Awards: Basic Education",image[0]);
         subModuleList.add(a);
-        a = new SubModule(7,"Academic Scholarships: Tertiary");
+        a = new SubModule(7,"Academic Scholarships: Tertiary",image[0]);
         subModuleList.add(a);
-        a = new SubModule(8,"Academic Scholarships: Basic Education");
+        a = new SubModule(8,"Academic Scholarships: Basic Education",image[0]);
         subModuleList.add(a);
-        a = new SubModule(9,"Non-Academic Scholarships");
+        a = new SubModule(9,"Non-Academic Scholarships",image[0]);
+        subModuleList.add(a);
+        a = new SubModule(10,"Take a quiz",image[1]);
         subModuleList.add(a);
 
 

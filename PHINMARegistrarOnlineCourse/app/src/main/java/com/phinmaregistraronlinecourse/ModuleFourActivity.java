@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.phinmaregistraronlinecourse.activity.QuizConfirmation;
 import com.phinmaregistraronlinecourse.adapter.SubModule;
 import com.phinmaregistraronlinecourse.adapter.SubModuleAdapter;
 import com.phinmaregistraronlinecourse.moduleFour.ModuleFourSub1;
@@ -113,6 +114,10 @@ public class ModuleFourActivity extends AppCompatActivity {
                     intent.putExtra("title",subModule.getTitle());
                     startActivity(intent);
                 }
+                else if(number==7){
+                    Intent intent=new Intent(getApplicationContext(),QuizConfirmation.class);
+                    startActivity(intent);
+                }
             }
 
             @Override
@@ -127,20 +132,26 @@ public class ModuleFourActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        int[] image = new int[]{
+                R.drawable.ic_file_document_grey600_24dp,
+                R.drawable.ic_file_question_grey600_24dp};
+
         adapter = new SubModuleAdapter(subModuleList);
         subModuleList.clear();
 
-        SubModule a = new SubModule(1,"Encoding and Submission of Grades by Faculty Members");
+        SubModule a = new SubModule(1,"Encoding and Submission of Grades by Faculty Members",image[0]);
         subModuleList.add(a);
-        a = new SubModule(2,"Release of Grades");
+        a = new SubModule(2,"Release of Grades",image[0]);
         subModuleList.add(a);
-        a = new SubModule(3,"Final examination as requirements for passing board subjects and board preparation subjects");
+        a = new SubModule(3,"Final examination as requirements for passing board subjects and board preparation subjects",image[0]);
         subModuleList.add(a);
-        a = new SubModule(4,"The Grade Point Average (GPA)");
+        a = new SubModule(4,"The Grade Point Average (GPA)",image[0]);
         subModuleList.add(a);
-        a = new SubModule(5,"Change of Grade");
+        a = new SubModule(5,"Change of Grade",image[0]);
         subModuleList.add(a);
-        a = new SubModule(6,"Dean’s List");
+        a = new SubModule(6,"Dean’s List",image[0]);
+        subModuleList.add(a);
+        a = new SubModule(7,"Take a quiz",image[1]);
         subModuleList.add(a);
 
 

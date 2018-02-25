@@ -23,12 +23,13 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:titleEnabled="true">
 
-            <com.android.volley.toolbox.NetworkImageView
-                android:id="@+id/facade"
+            <com.phinmaregistraronlinecourse.other.CircularNetworkImageView
+                android:id="@+id/image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fitsSystemWindows="true"
-                android:scaleType="centerInside" />
+                android:scaleType="centerInside"
+                android:layout_marginBottom="@dimen/margin"/>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/technique_three_toolbar"
@@ -85,11 +86,6 @@
 
                 </LinearLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height=".5dp"
-                    android:background="@android:color/darker_gray"/>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -106,6 +102,7 @@
                         android:text="Name"
                         android:textSize="18sp"
                         android:textStyle="bold"
+                        android:paddingLeft="@dimen/padding"
                         android:textAlignment="viewStart"/>
 
                     <TextView
@@ -113,39 +110,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight=".6"
-                        android:text="Eeje S. Manipon"
+                        android:text="lorem ipsum"
                         android:textSize="18sp"
-                        android:paddingStart="10dp"/>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="5dp"
-                    android:layout_weight="1"
-                    android:weightSum="2">
-
-                    <TextView
-                        android:id="@+id/lblEmail"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1.4"
-                        android:text="Email"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
+                        android:paddingStart="10dp"
                         android:textAlignment="viewStart"/>
 
-                    <TextView
-                        android:id="@+id/txtEmail"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight=".6"
-                        android:text="epongmanipon@gmail.com"
-                        android:textSize="18sp"
-                        android:paddingStart="10dp"/>
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -162,6 +133,7 @@
                         android:text="Employee ID"
                         android:textSize="18sp"
                         android:textStyle="bold"
+                        android:paddingLeft="@dimen/padding"
                         android:textAlignment="viewStart"/>
 
                     <TextView
@@ -169,10 +141,70 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight=".6"
-                        android:text="03-1415-01696"
+                        android:text="lorem ipsum"
                         android:textSize="18sp"
                         android:paddingStart="10dp"
                         android:textAlignment="viewStart"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/lblUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="Username"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/padding"
+                        android:textAlignment="viewStart"/>
+
+                    <TextView
+                        android:id="@+id/txtUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:text="lorem ipsum"
+                        android:textSize="18sp"
+                        android:paddingStart="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/lblEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="Email"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="@dimen/padding"
+                        android:textAlignment="viewStart"/>
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:text="lorem ipsum"
+                        android:textSize="18sp"
+                        android:paddingStart="10dp"/>
 
                 </LinearLayout>
             </LinearLayout>

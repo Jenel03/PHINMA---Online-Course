@@ -10,14 +10,26 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.android.volley.toolbox.ImageLoader;
 import com.phinmaregistraronlinecourse.R;
+import com.phinmaregistraronlinecourse.adapter.UserData;
+import com.phinmaregistraronlinecourse.connection.Constants;
+import com.phinmaregistraronlinecourse.connection.SharedPrefManager;
+import com.phinmaregistraronlinecourse.other.CircularNetworkImageView;
+import com.phinmaregistraronlinecourse.volley.AppController;
+
+import org.w3c.dom.Text;
 
 /**
  * Created by Manipon on 01/30/2018.
  */
 
 public class Profile extends Fragment {
+
+    UserData user;
+    TextView txtName,txtID,txtUsername,txtEmail;
 
     @Nullable
     @Override
@@ -26,6 +38,12 @@ public class Profile extends Fragment {
         //change R.layout.yourlayoutfilename for each of your fragments
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
+        user = SharedPrefManager.getInstance(getContext()).getUser();
+
+        txtName = (TextView) view.findViewById(R.id.txtName);
+        txtID = (TextView) view.findViewById(R.id.txtID);
+        txtUsername = (TextView) view.findViewById(R.id.txtUsername);
+        txtEmail = (TextView) view.findViewById(R.id.txtEmail);
         //Collapsing toolbar
         final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) view.findViewById(R.id.collapsing_container);
         AppBarLayout appBarLayout = (AppBarLayout) view.findViewById(R.id.my_appbar_container);
@@ -42,15 +60,20 @@ public class Profile extends Fragment {
                     //collapsingToolbarLayout.setTitle(name);
                     isShow = true;
                 } else if (isShow) {
-                    collapsingToolbarLayout.setTitle("Eeje Manipon");//carefull there should a space between double quote otherwise it wont work
+                    collapsingToolbarLayout.setTitle("");//carefull there should a space between double quote otherwise it wont work
                     isShow = false;
                 }
             }
         });
 
+        CircularNetworkImageView image = (CircularNetworkImageView) view.findViewById(R.id.image);
+        ImageLoader netImageLoader= AppController.getInstance().getImageLoader();
+        image.setImageUrl(Constants.IMAGE_URL+user.getImage(), netImageLoader);
 
-
-
+        txtName.setText(user.getFirstname()+" "+user.getMiddlename()+" "+user.getLastname());
+        txtID.setText(user.getEmp_id());
+        txtUsername.setText(user.getUsername());
+        txtEmail.setText(user.getEmail());
         return view;
 
     }

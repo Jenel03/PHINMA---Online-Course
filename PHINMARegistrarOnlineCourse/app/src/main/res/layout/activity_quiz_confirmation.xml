@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phinmaregistraronlinecourse.activity.QuizConfirmation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_side_large">
+        <TextView
+            android:id="@+id/lblQuizHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:text="Module _ | _ Questions"
+            android:textSize="@dimen/title_size_large"
+            android:layout_marginBottom="@dimen/margin_medium"
+            />
+
+        <TextView
+            android:id="@+id/lblQuizTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblQuizHeader"
+            android:text="Answer atleast _ correctly to pass the quiz"
+            android:textSize="@dimen/title_size"
+            android:layout_marginBottom="@dimen/margin_medium"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblQuizTotal"
+            android:text="If you skip the quiz, you are not able to proceed to the next module"
+            android:textSize="@dimen/title_size"
+            android:layout_marginBottom="@dimen/margin_medium"
+            />
+
+        <Button
+            android:id="@+id/btnQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Evaluated"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_side_medium"
+            android:layout_marginRight="@dimen/margin_side_medium"/>
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skip Quiz"
+            android:layout_below="@id/btnQuiz"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_side_medium"
+            android:layout_marginRight="@dimen/margin_side_medium"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

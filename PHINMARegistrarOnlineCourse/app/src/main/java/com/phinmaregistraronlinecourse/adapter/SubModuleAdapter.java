@@ -31,11 +31,11 @@ public class SubModuleAdapter extends RecyclerView.Adapter<SubModuleAdapter.MyVi
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView title;
-
+        ImageView imageView;
         public MyViewHolder(View view) {
             super(view);
             title = (TextView) view.findViewById(R.id.txtTitle);
-
+            imageView = (ImageView) view.findViewById(R.id.thumbnail);
         }
     }
 
@@ -58,7 +58,7 @@ public class SubModuleAdapter extends RecyclerView.Adapter<SubModuleAdapter.MyVi
     public void onBindViewHolder(MyViewHolder holder, int position) {
         SubModule m = subModuleList.get(position);
         holder.title.setText(subModuleList.get(position).getTitle());
-
+        holder.imageView.setImageResource(subModuleList.get(position).getImage());
     }
 
     @Override

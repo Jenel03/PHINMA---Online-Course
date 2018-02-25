@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.phinmaregistraronlinecourse.activity.QuizConfirmation;
 import com.phinmaregistraronlinecourse.adapter.SubModule;
 import com.phinmaregistraronlinecourse.adapter.SubModuleAdapter;
 import com.phinmaregistraronlinecourse.moduleFive.ModuleFiveSub1;
@@ -95,6 +96,10 @@ public class ModuleFiveActivity extends AppCompatActivity {
                     intent.putExtra("title",subModule.getTitle());
                     startActivity(intent);
                 }
+                else if(number==4){
+                    Intent intent=new Intent(getApplicationContext(),QuizConfirmation.class);
+                    startActivity(intent);
+                }
 
             }
 
@@ -110,14 +115,20 @@ public class ModuleFiveActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        int[] image = new int[]{
+                R.drawable.ic_file_document_grey600_24dp,
+                R.drawable.ic_file_question_grey600_24dp};
+
         adapter = new SubModuleAdapter(subModuleList);
         subModuleList.clear();
 
-        SubModule a = new SubModule(1,"Application for Graduation");
+        SubModule a = new SubModule(1,"Application for Graduation",image[0]);
         subModuleList.add(a);
-        a = new SubModule(2,"The Graduation Attire and Sash");
+        a = new SubModule(2,"The Graduation Attire and Sash",image[0]);
         subModuleList.add(a);
-        a = new SubModule(3,"Nomination and Selection of a Class Valedictorian");
+        a = new SubModule(3,"Nomination and Selection of a Class Valedictorian",image[0]);
+        subModuleList.add(a);
+        a = new SubModule(4,"Take a quiz",image[1]);
         subModuleList.add(a);
 
         //recyclerview

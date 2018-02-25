@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.phinmaregistraronlinecourse.R;
+import com.phinmaregistraronlinecourse.adapter.UserData;
 import com.phinmaregistraronlinecourse.connection.ChangePasswordHandler;
 import com.phinmaregistraronlinecourse.connection.Constants;
 import com.phinmaregistraronlinecourse.connection.SharedPrefManager;
@@ -20,6 +21,7 @@ public class ChangePassword extends AppCompatActivity {
 
     private Button send;
     private EditText newPass,confirmNew;
+    UserData user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +32,12 @@ public class ChangePassword extends AppCompatActivity {
         confirmNew = (EditText)findViewById(R.id.txtConfirmPass);
         send = (Button)findViewById(R.id.btnUpdate);
 
+        user = SharedPrefManager.getInstance(this).getUser();
+
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String a =  "" + SharedPrefManager.getInstance(ChangePassword.this).getId();
+                String a =  "" + user.getId();
                 if (newPass.getText().toString().isEmpty() && confirmNew.getText().toString().isEmpty()) {
 
                 } else {
@@ -63,7 +67,8 @@ public class ChangePassword extends AppCompatActivity {
     }
 
     private void updatePassword() {
-        final String id = SharedPrefManager.getInstance(this).getId().toString();
+        user = SharedPrefManager.getInstance(this).getUser();
+        final String id = String.valueOf(user.getId());
         final String password = newPass.getText().toString().trim();
 
         class UpdateEmployee extends AsyncTask<Void, Void, String> {

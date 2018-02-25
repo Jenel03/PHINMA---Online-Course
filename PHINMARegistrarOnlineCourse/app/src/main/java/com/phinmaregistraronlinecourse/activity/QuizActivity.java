@@ -5,15 +5,20 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.phinmaregistraronlinecourse.R;
+import com.phinmaregistraronlinecourse.adapter.QuizData;
+
+import java.util.List;
 
 public class QuizActivity extends AppCompatActivity {
+
+    private List<QuizData> movieItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle("Quiz");
+        setTitle("");
     }
 
     @Override

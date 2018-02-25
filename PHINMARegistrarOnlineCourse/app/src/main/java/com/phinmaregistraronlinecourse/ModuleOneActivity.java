@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.phinmaregistraronlinecourse.activity.QuizConfirmation;
 import com.phinmaregistraronlinecourse.adapter.SubModule;
 import com.phinmaregistraronlinecourse.adapter.SubModuleAdapter;
 import com.phinmaregistraronlinecourse.moduleOne.ModuleOneSub1;
@@ -114,6 +115,11 @@ public class ModuleOneActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
 
+                else if(number==7){
+                    Intent intent=new Intent(getApplicationContext(),QuizConfirmation.class);
+                    startActivity(intent);
+                }
+
             }
 
             @Override
@@ -128,20 +134,26 @@ public class ModuleOneActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        int[] image = new int[]{
+                R.drawable.ic_file_document_grey600_24dp,
+                R.drawable.ic_file_question_grey600_24dp};
+
         adapter = new SubModuleAdapter(subModuleList);
         subModuleList.clear();
 
-        SubModule a = new SubModule(1,"Entrance Credentials");
+        SubModule a = new SubModule(1,"Entrance Credentials",image[0]);
         subModuleList.add(a);
-        a = new SubModule(2,"Readmission of Former Students");
+        a = new SubModule(2,"Readmission of Former Students",image[0]);
         subModuleList.add(a);
-        a = new SubModule(3,"Admission of Transferees");
+        a = new SubModule(3,"Admission of Transferees",image[0]);
         subModuleList.add(a);
-        a = new SubModule(4,"Enrollment Process for New Students");
+        a = new SubModule(4,"Enrollment Process for New Students",image[0]);
         subModuleList.add(a);
-        a = new SubModule(5,"Enrollment Process for Old Students");
+        a = new SubModule(5,"Enrollment Process for Old Students",image[0]);
         subModuleList.add(a);
-        a = new SubModule(6,"Enrollment Process for Transferees");
+        a = new SubModule(6,"Enrollment Process for Transferees",image[0]);
+        subModuleList.add(a);
+        a = new SubModule(7,"Take a quiz",image[1]);
         subModuleList.add(a);
 
 

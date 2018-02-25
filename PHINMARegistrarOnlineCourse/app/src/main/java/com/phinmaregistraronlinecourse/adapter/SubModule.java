@@ -8,13 +8,15 @@ public class SubModule {
 
     private String title;
     private int id;
+    private int image;
 
     public SubModule() {
     }
 
-    public SubModule(int id,String title) {
+    public SubModule(int id,String title,int image) {
         this.id = id;
         this.title = title;
+        this.image = image;
     }
 
     public String getTitle() {
@@ -31,6 +33,14 @@ public class SubModule {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getImage () {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
     }
 
 }

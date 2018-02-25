@@ -16,6 +16,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.phinmaregistraronlinecourse.R;
+import com.phinmaregistraronlinecourse.adapter.Module;
+import com.phinmaregistraronlinecourse.adapter.UserData;
 import com.phinmaregistraronlinecourse.connection.Constants;
 import com.phinmaregistraronlinecourse.connection.RequestHandler;
 import com.phinmaregistraronlinecourse.connection.SharedPrefManager;
@@ -94,7 +96,9 @@ public class Login extends AppCompatActivity {
 
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
+
                 Constants.URL_LOGIN,
+
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -102,20 +106,34 @@ public class Login extends AppCompatActivity {
                         try {
                             JSONObject obj = new JSONObject(response);
                             if(!obj.getBoolean("error")){
-                                SharedPrefManager.getInstance(getApplicationContext())
-                                        .userLogin(
-                                                obj.getInt("id"),
-                                                obj.getString("firstname"),
-                                                obj.getString("middlename"),
-                                                obj.getString("lastname"),
-                                                obj.getString("email"),
-                                                obj.getString("username"),
-                                                obj.getString("emp_id")
 
 
-                                        );
+
+                                //creating a new user object
+                                UserData user = new UserData(
+                                        obj.getInt("id"),
+                                        obj.getString("emp_id"),
+                                        obj.getString("firstname"),
+                                        obj.getString("middlename"),
+                                        obj.getString("lastname"),
+                                        obj.getString("email"),
+                                        obj.getString("username"),
+                                        password,
+                                        obj.getString("image"),
+                                        obj.getString("general_admission_policy"),
+                                        obj.getString("student_enrollment"),
+                                        obj.getString("enrollment_preparation"),
+                                        obj.getString("grading"),
+                                        obj.getString("graduation"),
+                                        obj.getString("registrar_document_and_transaction_standard"),
+                                        obj.getString("academic_and_non_academic_award_and_scholarship")
+                                );
+
+                                //storing the user in shared preferences
+                                SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
+
+                                //starting the profile activity
                                 Intent start = new Intent(getApplicationContext(), MainActivity.class);
-                                start.putExtra("pass",username);
                                 startActivity(start);
                                 finish();
                                 

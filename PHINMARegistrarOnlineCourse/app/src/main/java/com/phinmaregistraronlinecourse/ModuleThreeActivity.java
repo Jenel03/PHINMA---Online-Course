@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.phinmaregistraronlinecourse.activity.QuizConfirmation;
 import com.phinmaregistraronlinecourse.adapter.SubModule;
 import com.phinmaregistraronlinecourse.adapter.SubModuleAdapter;
 import com.phinmaregistraronlinecourse.moduleThree.ModuleThreeSub1;
@@ -101,6 +102,10 @@ public class ModuleThreeActivity extends AppCompatActivity {
                     intent.putExtra("title",subModule.getTitle());
                     startActivity(intent);
                 }
+                else if(number==5){
+                    Intent intent=new Intent(getApplicationContext(),QuizConfirmation.class);
+                    startActivity(intent);
+                }
 
             }
 
@@ -116,16 +121,22 @@ public class ModuleThreeActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        int[] image = new int[]{
+                R.drawable.ic_file_document_grey600_24dp,
+                R.drawable.ic_file_question_grey600_24dp};
+
         adapter = new SubModuleAdapter(subModuleList);
         subModuleList.clear();
 
-        SubModule a = new SubModule(1,"The School Year");
+        SubModule a = new SubModule(1,"The School Year",image[0]);
         subModuleList.add(a);
-        a = new SubModule(2,"Schedule Preparations and Room Assignments");
+        a = new SubModule(2,"Schedule Preparations and Room Assignments",image[0]);
         subModuleList.add(a);
-        a = new SubModule(3,"Opening and Closing Classes during and after Enrollment");
+        a = new SubModule(3,"Opening and Closing Classes during and after Enrollment",image[0]);
         subModuleList.add(a);
-        a = new SubModule(4,"Request for New PEN Subject Codes");
+        a = new SubModule(4,"Request for New PEN Subject Codes",image[0]);
+        subModuleList.add(a);
+        a = new SubModule(5,"Take a quiz",image[1]);
         subModuleList.add(a);
 
         //recyclerview

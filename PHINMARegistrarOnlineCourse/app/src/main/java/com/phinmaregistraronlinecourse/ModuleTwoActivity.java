@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.phinmaregistraronlinecourse.activity.QuizConfirmation;
 import com.phinmaregistraronlinecourse.adapter.SubModule;
 import com.phinmaregistraronlinecourse.adapter.SubModuleAdapter;
 import com.phinmaregistraronlinecourse.moduleTwo.ModuleTwoSub1;
@@ -125,6 +126,10 @@ public class ModuleTwoActivity extends AppCompatActivity {
                     intent.putExtra("title",subModule.getTitle());
                     startActivity(intent);
                 }
+                else if(number==9){
+                    Intent intent=new Intent(getApplicationContext(),QuizConfirmation.class);
+                    startActivity(intent);
+                }
             }
 
             @Override
@@ -139,24 +144,30 @@ public class ModuleTwoActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        int[] image = new int[]{
+                R.drawable.ic_file_document_grey600_24dp,
+                R.drawable.ic_file_question_grey600_24dp};
+
         adapter = new SubModuleAdapter(subModuleList);
         subModuleList.clear();
 
-        SubModule a = new SubModule(1,"Student Load");
+        SubModule a = new SubModule(1,"Student Load",image[0]);
         subModuleList.add(a);
-        a = new SubModule(2,"Determining the year level of a student");
+        a = new SubModule(2,"Determining the year level of a student",image[0]);
         subModuleList.add(a);
-        a = new SubModule(3,"Shifting Courses");
+        a = new SubModule(3,"Shifting Courses",image[0]);
         subModuleList.add(a);
-        a = new SubModule(4,"Cross Enrollment");
+        a = new SubModule(4,"Cross Enrollment",image[0]);
         subModuleList.add(a);
-        a = new SubModule(5,"Adding/Dropping/Changing of Subjects");
+        a = new SubModule(5,"Adding/Dropping/Changing of Subjects",image[0]);
         subModuleList.add(a);
-        a = new SubModule(6,"Off-Term Class");
+        a = new SubModule(6,"Off-Term Class",image[0]);
         subModuleList.add(a);
-        a = new SubModule(7,"Withdrawal of Credentials");
+        a = new SubModule(7,"Withdrawal of Credentials",image[0]);
         subModuleList.add(a);
-        a = new SubModule(8,"Late Enrollment");
+        a = new SubModule(8,"Late Enrollment",image[0]);
+        subModuleList.add(a);
+        a = new SubModule(9,"Take a quiz",image[1]);
         subModuleList.add(a);
 
 

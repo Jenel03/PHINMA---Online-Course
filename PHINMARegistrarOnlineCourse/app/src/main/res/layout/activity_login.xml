@@ -59,9 +59,9 @@
 
 
         <EditText
+            android:id="@+id/txtUsername"
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
-            android:id="@+id/txtUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/txtPassword"
@@ -77,9 +77,9 @@
 
 
         <EditText
+            android:id="@+id/txtPassword"
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
-            android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/btnLogin"

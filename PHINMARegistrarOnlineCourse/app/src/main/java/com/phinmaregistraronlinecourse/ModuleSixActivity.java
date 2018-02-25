@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.phinmaregistraronlinecourse.activity.QuizConfirmation;
 import com.phinmaregistraronlinecourse.adapter.SubModule;
 import com.phinmaregistraronlinecourse.adapter.SubModuleAdapter;
 import com.phinmaregistraronlinecourse.moduleSix.ModuleSixSub1;
@@ -101,6 +102,10 @@ public class ModuleSixActivity extends AppCompatActivity {
                     intent.putExtra("title",subModule.getTitle());
                     startActivity(intent);
                 }
+                else if(number==5){
+                    Intent intent=new Intent(getApplicationContext(),QuizConfirmation.class);
+                    startActivity(intent);
+                }
 
             }
 
@@ -115,16 +120,22 @@ public class ModuleSixActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        int[] image = new int[]{
+                R.drawable.ic_file_document_grey600_24dp,
+                R.drawable.ic_file_question_grey600_24dp};
+
         adapter = new SubModuleAdapter(subModuleList);
         subModuleList.clear();
 
-        SubModule a = new SubModule(1,"Process in Requesting Documents");
+        SubModule a = new SubModule(1,"Process in Requesting Documents",image[0]);
         subModuleList.add(a);
-        a = new SubModule(2,"Official Transcript of Records, Form 137, and Diploma");
+        a = new SubModule(2,"Official Transcript of Records, Form 137, and Diploma",image[0]);
         subModuleList.add(a);
-        a = new SubModule(3,"Authentication of Copies of Official Transcript of Records, Form 137, and Diploma");
+        a = new SubModule(3,"Authentication of Copies of Official Transcript of Records, Form 137, and Diploma",image[0]);
         subModuleList.add(a);
-        a = new SubModule(4,"Grade Reports");
+        a = new SubModule(4,"Grade Reports",image[0]);
+        subModuleList.add(a);
+        a = new SubModule(5,"Take a quiz",image[1]);
         subModuleList.add(a);
 
 
