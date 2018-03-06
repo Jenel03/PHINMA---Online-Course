@@ -116,13 +116,13 @@ public class Modules extends Fragment {
 
 
         int[] covers = new int[]{
-                R.drawable.sample,
-                R.drawable.sample,
-                R.drawable.sample,
-                R.drawable.sample,
-                R.drawable.sample,
-                R.drawable.sample,
-                R.drawable.sample};
+                R.drawable.admission_policy,
+                R.drawable.student_enrollment,
+                R.drawable.enrollment_preparations,
+                R.drawable.grading,
+                R.drawable.graduation,
+                R.drawable.documents_standards,
+                R.drawable.academic_awards};
 
         if(user.getModule1().equals("YES")){
             a = new Module(1,"General Admission Policy", 6, covers[0]);

@@ -1,17 +1,24 @@
 package com.phinmaregistraronlinecourse;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 public class QuizResult extends AppCompatActivity {
 
+    int score;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_result);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle("Result");
+
+        Intent intent=getIntent();
+        score=intent.getIntExtra("score",0);
+
+        setTitle(String.valueOf(score));
     }
 
     @Override

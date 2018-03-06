@@ -38,14 +38,16 @@ import java.util.Map;
 
 public class QuizConfirmation extends AppCompatActivity {
 
-    TextView txtHeader;
-    private ProgressDialog progressDialog;
+    TextView txtHeader,txtQuizTotal;
     private static final String TAG = QuizConfirmation.class.getSimpleName();
-    private List<QuizData> quizDataList;
+    private ArrayList<QuizData> quizDataList;
     int number;
     String module;
 
     Button btnQuiz,btnSkip;
+    int listSize;
+
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,23 +57,21 @@ public class QuizConfirmation extends AppCompatActivity {
         setTitle("Quiz");
 
         txtHeader = (TextView) findViewById(R.id.lblQuizHeader);
+        txtQuizTotal = (TextView) findViewById(R.id.lblQuizTotal);
         progressDialog = new ProgressDialog(this);
         quizDataList = new ArrayList<>();
         btnQuiz = (Button) findViewById(R.id.btnQuiz);
         btnSkip = (Button) findViewById(R.id.btnSkip);
 
         number = SharedPrefManager.getInstance(getApplicationContext()).getNumberOfModule();
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Gathering data...");
 
-        txtHeader.setText("Module " + number + " | _ Questions");
+
         makeJsonArrayRequest();
 
-        btnQuiz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),QuizActivity.class);
-                startActivity(intent);
-            }
-        });
+
+
 
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +79,21 @@ public class QuizConfirmation extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+    }
+
+    public void GotoQuiz(View view){
+        if(quizDataList.size()==0){
+            progressDialog.show();
+        }
+        else{
+            progressDialog.dismiss();
+            Intent intent = new Intent(getApplicationContext(),QuizActivity.class);
+            Bundle bundle=new Bundle();
+            bundle.putSerializable("questions",quizDataList);
+            intent.putExtras(bundle);
+            startActivity(intent);
+        }
 
     }
 
@@ -149,11 +164,16 @@ public class QuizConfirmation extends AppCompatActivity {
 
                             }
 
-                            int listSize = quizDataList.size();
 
+
+
+                            listSize = quizDataList.size();
+                            txtHeader.setText("Module " + number + " | " + quizDataList.size() + " Questions");
+                            txtQuizTotal.setText("Answer atleast " + (quizDataList.size()-2) + " correctly to pass the quiz");
+                            /*
                             for (int j = 0; j<listSize; j++){
                                 Toast.makeText(getApplicationContext(),quizDataList.get(j).getAnswer().toString(),Toast.LENGTH_LONG).show();
-                            }
+                            }*/
 
                         } catch (JSONException e2) {
                             e2.printStackTrace();

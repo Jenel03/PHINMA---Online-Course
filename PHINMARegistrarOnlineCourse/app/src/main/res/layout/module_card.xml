@@ -23,7 +23,8 @@
                 android:layout_height="@dimen/height"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true" />
 
             <TextView
                 android:id="@+id/title"

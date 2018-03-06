@@ -1,10 +1,12 @@
 package com.phinmaregistraronlinecourse.adapter;
 
+import java.io.Serializable;
+
 /**
  * Created by Manipon on 02/25/2018.
  */
 
-public class QuizData {
+public class QuizData implements Serializable {
     private int id;
     private String module, type, question,choose1,choose2,choose3,choose4,answer;
 
