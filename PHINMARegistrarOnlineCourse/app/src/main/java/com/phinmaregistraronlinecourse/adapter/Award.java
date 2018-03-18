@@ -5,17 +5,26 @@ package com.phinmaregistraronlinecourse.adapter;
  */
 
 public class Award {
-
+    private String profile;
     private String name;
-    private int trophy;
+    private String score;
 
 
     public Award() {
     }
 
-    public Award(String name,int trophy) {
+    public Award(String profile,String name,String score) {
+        this.profile = profile;
         this.name = name;
-        this.trophy = trophy;
+        this.score = score;
+    }
+
+    public String getProfile() {
+        return profile;
+    }
+
+    public void setProfile(String profile) {
+        this.profile = profile;
     }
 
     public String getName() {
@@ -26,12 +35,12 @@ public class Award {
         this.name = name;
     }
 
-    public int getTrophy() {
-        return trophy;
+    public String getScore() {
+        return score;
     }
 
-    public void setTrophy(int trophy) {
-        this.trophy = trophy;
+    public void setScore(String score) {
+        this.score = score;
     }
 
 

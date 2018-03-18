@@ -29,7 +29,7 @@
                 android:layout_height="match_parent"
                 android:fitsSystemWindows="true"
                 android:src="@drawable/grading"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:adjustViewBounds="true"/>
 
             <android.support.v7.widget.Toolbar

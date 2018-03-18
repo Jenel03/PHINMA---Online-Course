@@ -3,6 +3,8 @@ package com.phinmaregistraronlinecourse.connection;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.phinmaregistraronlinecourse.adapter.Achievement;
+import com.phinmaregistraronlinecourse.adapter.AchievementData;
 import com.phinmaregistraronlinecourse.adapter.QuizData;
 import com.phinmaregistraronlinecourse.adapter.UserData;
 
@@ -45,6 +47,24 @@ public class SharedPrefManager {
     private static final String KEY_QUIZ_CHOOSE4= "choose4";
     private static final String KEY_QUIZ_ANSWER= "answer";
 
+    private static final String KEY_COUNT_MODULE1= "count_m1";
+    private static final String KEY_COUNT_MODULE2= "count_m2";
+    private static final String KEY_COUNT_MODULE3= "count_m3";
+    private static final String KEY_COUNT_MODULE4= "count_m4";
+    private static final String KEY_COUNT_MODULE5= "count_m5";
+    private static final String KEY_COUNT_MODULE6= "count_m6";
+    private static final String KEY_COUNT_MODULE7= "count_m7";
+
+    private static final String KEY_SCORE_ID= "score_id";
+    private static final String KEY_SCORE_MODULE1= "score_m1";
+    private static final String KEY_SCORE_MODULE2= "score_m2";
+    private static final String KEY_SCORE_MODULE3= "score_m3";
+    private static final String KEY_SCORE_MODULE4= "score_m4";
+    private static final String KEY_SCORE_MODULE5= "score_m5";
+    private static final String KEY_SCORE_MODULE6= "score_m6";
+    private static final String KEY_SCORE_MODULE7= "score_m7";
+
+
     private SharedPrefManager(Context context) {
         mCtx = context;
 
@@ -80,6 +100,24 @@ public class SharedPrefManager {
         editor.putString(KEY_MODULE5, userData.getModule5());
         editor.putString(KEY_MODULE6, userData.getModule6());
         editor.putString(KEY_MODULE7, userData.getModule7());
+
+        editor.commit();
+
+    }
+
+    public void achievementScore(AchievementData achievementData){
+
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putInt(KEY_SCORE_ID, achievementData.getScoreId());
+        editor.putString(KEY_SCORE_MODULE1, achievementData.getScoreModule1());
+        editor.putString(KEY_SCORE_MODULE2, achievementData.getScoreModule2());
+        editor.putString(KEY_SCORE_MODULE3, achievementData.getScoreModule3());
+        editor.putString(KEY_SCORE_MODULE4, achievementData.getScoreModule4());
+        editor.putString(KEY_SCORE_MODULE5, achievementData.getScoreModule5());
+        editor.putString(KEY_SCORE_MODULE6, achievementData.getScoreModule6());
+        editor.putString(KEY_SCORE_MODULE7, achievementData.getScoreModule7());
 
         editor.commit();
 
@@ -139,6 +177,20 @@ public class SharedPrefManager {
                 sharedPreferences.getString(KEY_QUIZ_CHOOSE3, null),
                 sharedPreferences.getString(KEY_QUIZ_CHOOSE4, null),
                 sharedPreferences.getString(KEY_QUIZ_ANSWER, null)
+        );
+    }
+
+    public AchievementData getScore() {
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return new AchievementData(
+                sharedPreferences.getInt(KEY_SCORE_ID, -1),
+                sharedPreferences.getString(KEY_SCORE_MODULE1, null),
+                sharedPreferences.getString(KEY_SCORE_MODULE2, null),
+                sharedPreferences.getString(KEY_SCORE_MODULE3, null),
+                sharedPreferences.getString(KEY_SCORE_MODULE4, null),
+                sharedPreferences.getString(KEY_SCORE_MODULE5, null),
+                sharedPreferences.getString(KEY_SCORE_MODULE6, null),
+                sharedPreferences.getString(KEY_SCORE_MODULE7, null)
         );
     }
 
@@ -208,6 +260,79 @@ public class SharedPrefManager {
     public int getNumberOfModule(){
         SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
         return sharedPreferences.getInt(KEY_MODULE, -1);
+    }
+
+    public void setcountModule1(String count){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(KEY_COUNT_MODULE1,count);
+        editor.commit();
+    }
+    public void setcountModule2(String count){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(KEY_COUNT_MODULE2,count);
+        editor.commit();
+    }
+    public void setcountModule3(String count){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(KEY_COUNT_MODULE3,count);
+        editor.commit();
+    }
+    public void setcountModule4(String count){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(KEY_COUNT_MODULE4,count);
+        editor.commit();
+    }
+    public void setcountModule5(String count){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(KEY_COUNT_MODULE5,count);
+        editor.commit();
+    }
+    public void setcountModule6(String count){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(KEY_COUNT_MODULE6,count);
+        editor.commit();
+    }
+    public void setcountModule7(String count){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(KEY_COUNT_MODULE7,count);
+        editor.commit();
+    }
+
+
+    public String getcountModule1(){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getString(KEY_COUNT_MODULE1, null);
+    }
+    public String getcountModule2(){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getString(KEY_COUNT_MODULE2, null);
+    }
+    public String getcountModule3(){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getString(KEY_COUNT_MODULE3, null);
+    }
+    public String getcountModule4(){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getString(KEY_COUNT_MODULE4, null);
+    }
+    public String getcountModule5(){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getString(KEY_COUNT_MODULE5, null);
+    }
+    public String getcountModule6(){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getString(KEY_COUNT_MODULE6, null);
+    }
+    public String getcountModule7(){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getString(KEY_COUNT_MODULE7, null);
     }
 
 

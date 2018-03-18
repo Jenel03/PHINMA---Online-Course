@@ -139,7 +139,7 @@ public class ModuleOneActivity extends AppCompatActivity {
                 R.drawable.ic_file_question_grey600_24dp};
 
         adapter = new SubModuleAdapter(subModuleList);
-        subModuleList.clear();
+
 
         SubModule a = new SubModule(1,"Entrance Credentials",image[0]);
         subModuleList.add(a);

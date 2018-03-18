@@ -24,12 +24,13 @@ public class AchievementAdapter extends RecyclerView.Adapter<AchievementAdapter.
     private List<Achievement> achievementList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView title;
+        public TextView title,percent;
         public ProgressBar progressBar;
 
         public MyViewHolder(View view) {
             super(view);
             title = (TextView) view.findViewById(R.id.title);
+            percent = (TextView) view.findViewById(R.id.percent);
             progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
         }
     }
@@ -52,6 +53,7 @@ public class AchievementAdapter extends RecyclerView.Adapter<AchievementAdapter.
     public void onBindViewHolder(final AchievementAdapter.MyViewHolder holder, int position) {
         final Achievement achievement = achievementList.get(position);
         holder.title.setText(achievement.getTitle());
+        holder.percent.setText(achievement.getProgress()+"%");
         holder.progressBar.setProgress(achievement.getProgress());
 
 

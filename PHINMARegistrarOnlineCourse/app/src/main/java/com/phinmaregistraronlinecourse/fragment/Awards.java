@@ -9,12 +9,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.phinmaregistraronlinecourse.R;
 import com.phinmaregistraronlinecourse.adapter.Achievement;
 import com.phinmaregistraronlinecourse.adapter.AchievementAdapter;
 import com.phinmaregistraronlinecourse.adapter.Award;
 import com.phinmaregistraronlinecourse.adapter.AwardAdapter;
+import com.phinmaregistraronlinecourse.connection.Constants;
 import com.phinmaregistraronlinecourse.other.RecyclerTouchListener;
+import com.phinmaregistraronlinecourse.volley.AppController;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +38,9 @@ public class Awards extends Fragment {
     private RecyclerView recyclerView;
     private AwardAdapter adapter;
     private List<Award> awardList;
+
+    private static final String TAG = Awards.class.getSimpleName();
+
 
     @Nullable
     @Override
@@ -46,59 +59,65 @@ public class Awards extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
 
-        prepareAwards();
+
 
         try {
-
+            makeJsonArrayRequest();
         } catch (Exception e) {
             e.printStackTrace();
         }
         return view;
     }
 
-    private void prepareAwards() {
-
-        int[] trophy = new int[]{
-                R.drawable.ic_trophy_outline_grey600_18dp};
 
 
-        Award a = new Award("Name",trophy[0]);
-        awardList.add(a);
+    private void makeJsonArrayRequest() {
 
-        a = new Award("Name",trophy[0]);
-        awardList.add(a);
-
-        a = new Award("Name",trophy[0]);
-        awardList.add(a);
-
-        a = new Award("Name",trophy[0]);
-        awardList.add(a);
-
-        a = new Award("Name",trophy[0]);
-        awardList.add(a);
-
-        a = new Award("Name",trophy[0]);
-        awardList.add(a);
-
-        a = new Award("Name",trophy[0]);
-        awardList.add(a);
+        JsonArrayRequest movieReq = new JsonArrayRequest(Constants.URL_AWARDS,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
 
 
-        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView, new RecyclerTouchListener.ClickListener() {
+                        // Parsing json
+                        for (int i = 0; i < response.length(); i++) {
+                            try {
+
+                                JSONObject obj = response.getJSONObject(i);
+                                Award award = new Award();
+
+                                award.setName(obj.getString("firstname")+" "+obj.getString("lastname"));
+                                award.setProfile(Constants.IMAGE_URL+obj.getString("image"));
+                                award.setScore(obj.getString("score"));
+
+                                awardList.add(award);
+
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+
+                        }
+
+                        // notifying list adapter about data changes
+                        // so that it renders the list view with updated data
+                        adapter.notifyDataSetChanged();
+
+
+                    }
+                }, new Response.ErrorListener() {
             @Override
-            public void onClick(View view, int position) {
+            public void onErrorResponse(VolleyError error) {
+                VolleyLog.d(TAG, "Error: " + error.getMessage());
 
             }
+        });
 
-            @Override
-            public void onLongClick(View view, int position) {
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(movieReq);
 
-            }
-        }));
-
-
-        adapter.notifyDataSetChanged();
     }
+
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
@@ -106,5 +125,7 @@ public class Awards extends Fragment {
         //you can set the title for your toolbar here for different fragments different titles
         getActivity().setTitle("Awards");
     }
+
+
 
 }

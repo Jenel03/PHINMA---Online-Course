@@ -83,22 +83,18 @@ public class Modules extends Fragment {
 
 
 
-        prepareModule();
+
 
 
         try {
+            prepareModule();
 
             mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                 @Override
                 public void onRefresh() {
                     // Refresh items
                     refreshItems();
-                    /*
-                    moduleList.clear();
-                    recyclerView.setAdapter(adapter);
-                    adapter.notifyDataSetChanged();
-                    prepareModule();
-                    */
+
                 }
             });
         } catch (Exception e) {
@@ -108,6 +104,112 @@ public class Modules extends Fragment {
 
 
         return view;
+    }
+
+    void refreshItems() {
+        // Load items
+
+        prepareModule();
+
+        // Load complete
+        onItemsLoadComplete();
+    }
+
+    void onItemsLoadComplete() {
+        // Update the adapter and notify data set changed
+        // ...
+        refreshData();
+
+
+    }
+
+    private void refreshData(){
+
+        // showing refresh animation before making http call
+        mSwipeRefreshLayout.setRefreshing(true);
+
+        user = SharedPrefManager.getInstance(getContext()).getUser();
+        final String password = user.getPassword();
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+
+                Constants.URL_LOGIN,
+
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                        try {
+                            JSONObject obj = new JSONObject(response);
+                            if(!obj.getBoolean("error")){
+
+
+
+                                //creating a new user object
+                                UserData user = new UserData(
+                                        obj.getInt("id"),
+                                        obj.getString("emp_id"),
+                                        obj.getString("firstname"),
+                                        obj.getString("middlename"),
+                                        obj.getString("lastname"),
+                                        obj.getString("email"),
+                                        obj.getString("username"),
+                                        password,
+                                        obj.getString("image"),
+                                        obj.getString("general_admission_policy"),
+                                        obj.getString("student_enrollment"),
+                                        obj.getString("enrollment_preparation"),
+                                        obj.getString("grading"),
+                                        obj.getString("graduation"),
+                                        obj.getString("registrar_document_and_transaction_standard"),
+                                        obj.getString("academic_and_non_academic_award_and_scholarship")
+                                );
+
+                                //storing the user in shared preferences
+                                SharedPrefManager.getInstance(getContext()).userLogin(user);
+
+
+                            }else{
+
+                                Toast.makeText(
+                                        getContext(),
+                                        obj.getString("message"),
+                                        Toast.LENGTH_LONG
+                                ).show();
+                            }
+
+                            // stopping swipe refresh
+                            mSwipeRefreshLayout.setRefreshing(false);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(
+                                getContext(),
+                                "Please check your internet connection",
+                                Toast.LENGTH_LONG
+                        ).show();
+
+                        // stopping swipe refresh
+                        mSwipeRefreshLayout.setRefreshing(false);
+                    }
+                }
+        ){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("username", user.getUsername());
+                params.put("password", password);
+                return params;
+            }
+
+        };
+
+        RequestHandler.getInstance(getActivity()).addToRequestQueue(stringRequest);
     }
 
 
@@ -167,6 +269,7 @@ public class Modules extends Fragment {
                     intent.putExtra("title",module.getName());
                     SharedPrefManager.getInstance(getContext()).setNumberOfModule(module.getId());
                     startActivity(intent);
+
                 }
                 else if(number==2){
                     Intent intent=new Intent(getContext(),ModuleTwoActivity.class);
@@ -214,101 +317,6 @@ public class Modules extends Fragment {
 
 
         adapter.notifyDataSetChanged();
-    }
-
-    void refreshItems() {
-        // Load items
-        // ...
-
-        // Load complete
-        onItemsLoadComplete();
-    }
-
-    void onItemsLoadComplete() {
-        // Update the adapter and notify data set changed
-        // ...
-        //refreshData();
-        // Stop refresh animation
-        mSwipeRefreshLayout.setRefreshing(false);
-    }
-
-    private void refreshData(){
-        final String password = user.getPassword();
-        StringRequest stringRequest = new StringRequest(
-                Request.Method.POST,
-
-                Constants.URL_LOGIN,
-
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-
-                        try {
-                            JSONObject obj = new JSONObject(response);
-                            if(!obj.getBoolean("error")){
-
-
-
-                                //creating a new user object
-                                UserData user = new UserData(
-                                        obj.getInt("id"),
-                                        obj.getString("emp_id"),
-                                        obj.getString("firstname"),
-                                        obj.getString("middlename"),
-                                        obj.getString("lastname"),
-                                        obj.getString("email"),
-                                        obj.getString("username"),
-                                        password,
-                                        obj.getString("image"),
-                                        obj.getString("general_admission_policy"),
-                                        obj.getString("student_enrollment"),
-                                        obj.getString("enrollment_preparation"),
-                                        obj.getString("grading"),
-                                        obj.getString("graduation"),
-                                        obj.getString("registrar_document_and_transaction_standard"),
-                                        obj.getString("academic_and_non_academic_award_and_scholarship")
-                                );
-
-                                //storing the user in shared preferences
-                                SharedPrefManager.getInstance(getContext()).userLogin(user);
-
-
-
-                            }else{
-
-                                Toast.makeText(
-                                        getContext(),
-                                        obj.getString("message"),
-                                        Toast.LENGTH_LONG
-                                ).show();
-                            }
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(
-                                getContext(),
-                                error.getMessage(),
-                                Toast.LENGTH_LONG
-                        ).show();
-                    }
-                }
-        ){
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                params.put("username", user.getUsername());
-                params.put("password", password);
-                return params;
-            }
-
-        };
-
-        RequestHandler.getInstance(getActivity()).addToRequestQueue(stringRequest);
     }
 
 
